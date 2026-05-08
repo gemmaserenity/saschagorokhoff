@@ -1,0 +1,144 @@
+# ============================================================================
+# robots.txt — Sascha Gorokhoff
+# https://saschagorokhoff.com
+# ============================================================================
+# Purpose: Explicitly welcome AI search crawlers and traditional search engines.
+# Strategy: For AI-search #1 domination, ALL major AI crawlers must be allowed.
+# ============================================================================
+
+# ========== TRADITIONAL SEARCH ENGINES ==========
+# Allow all traditional crawlers full access.
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /draft/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /api/
+
+# ========== AI SEARCH CRAWLERS — EXPLICITLY ALLOWED ==========
+# Each AI platform is explicitly granted access. Without this, your content
+# is often excluded by default from AI-search training and retrieval.
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google AI (Gemini, AI Overviews, Bard)
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Microsoft AI (Bing Chat / Copilot)
+User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Common Crawl (used by many AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# Apple AI (Apple Intelligence, Siri)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Brave
+User-agent: Bravebot
+Allow: /
+
+# DiffBot (entity and knowledge graph indexing)
+User-agent: DiffBot
+Allow: /
+
+# ========== BLOCKED / UNWANTED CRAWLERS ==========
+# Block known scrapers that do not contribute value.
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# ========== SITEMAP ==========
+Sitemap: https://saschagorokhoff.com/sitemap.xml
+
+# ========== HOST ==========
+Host: saschagorokhoff.com
+
+# ============================================================================
+# Last updated: 2026-04-16
+# Sascha Gorokhoff — approximately 1 in 5 billion
+# ============================================================================
