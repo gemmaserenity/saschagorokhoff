@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sascha Gorokhoff — Private 1:1 Consulting | Strategic Counsel for the World's Highest Achievers | $10,000</title>
+<meta name="description" content="Private 1:1 strategic counsel with Sascha Gorokhoff — delivered worldwide via secure video. The Strategic Session ($10K · 90 min), VIP Half Days ($75K online · $100K on-location), and Sovereign Engagement (by invitation). Application only. EN · FR · DE." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter+Tight:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy-deepest: #050B1E;
+    --navy-deep: #0A1530;
+    --navy: #0F1E42;
+    --navy-mid: #1A2B5C;
+    --navy-light: #2A3D75;
+    --gold: #C9A84C;
+    --gold-bright: #E8CC80;
+    --gold-pale: #F4E5B8;
+    --gold-deep: #8E7530;
+    --cream: #F5EFE0;
+    --cream-soft: #EDE5D0;
+    --line: rgba(201, 168, 76, 0.22);
+    --line-strong: rgba(201, 168, 76, 0.45);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter Tight', sans-serif;
+    background: var(--navy-deepest);
+    color: var(--cream);
+    line-height: 1.55;
+    overflow-x: hidden;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none;
+    background-image:
+      radial-gradient(circle at 50% 0%, rgba(201, 168, 76, 0.08), transparent 60%),
+      radial-gradient(circle at 0% 100%, rgba(201, 168, 76, 0.04), transparent 50%);
+    z-index: 1;
+  }
+  body::after {
+    content: ''; position: fixed; inset: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.5; z-index: 1; mix-blend-mode: overlay;
+  }
+  .container { position: relative; z-index: 2; }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  h1 em, h2 em, h3 em { font-style: italic; color: var(--gold-bright); font-weight: 400; }
+
+  .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* NAV */
+  nav.topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1.2rem 3rem;
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(5, 11, 30, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav.topbar .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; color: var(--cream);
+    text-decoration: none; letter-spacing: 0.04em;
+  }
+  nav.topbar .brand span { color: var(--gold); }
+  nav.topbar .nav-links { display: flex; gap: 2.4rem; align-items: center; }
+  nav.topbar .nav-links a {
+    color: var(--cream-soft); text-decoration: none;
+    font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace; transition: color 0.3s;
+  }
+  nav.topbar .nav-links a:hover { color: var(--gold-bright); }
+  nav.topbar .nav-cta {
+    padding: 0.7rem 1.4rem; border: 1px solid var(--gold);
+    color: var(--gold-bright) !important; transition: all 0.3s;
+  }
+  nav.topbar .nav-cta:hover { background: var(--gold); color: var(--navy-deepest) !important; }
+  @media (max-width: 900px) {
+    nav.topbar { padding: 1rem 1.2rem; }
+    nav.topbar .nav-links a:not(.nav-cta) { display: none; }
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    padding: 11rem 3rem 6rem;
+    display: flex; align-items: center;
+    position: relative;
+    background: linear-gradient(180deg, var(--navy-deepest) 0%, var(--navy-deep) 100%);
+    overflow: hidden;
+  }
+  .hero-grid {
+    max-width: 1320px; margin: 0 auto; width: 100%;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 5rem; align-items: center;
+    position: relative; z-index: 3;
+  }
+  @media (max-width: 1000px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+  }
+  .hero-tag {
+    display: flex; align-items: center; gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .hero-tag .line { width: 50px; height: 1px; background: var(--gold); }
+  .hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    font-weight: 300; color: var(--cream);
+    margin-bottom: 1.8rem; max-width: 18ch;
+  }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.15rem, 1.8vw, 1.65rem);
+    font-weight: 300; font-style: italic;
+    color: var(--cream-soft);
+    max-width: 56ch; line-height: 1.5;
+    margin-bottom: 2.5rem;
+  }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+  .btn-primary {
+    padding: 1.1rem 2.4rem;
+    background: var(--gold); color: var(--navy-deepest);
+    text-decoration: none; font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
+    font-weight: 500; transition: all 0.3s;
+    border: 1px solid var(--gold);
+  }
+  .btn-primary:hover { background: var(--gold-bright); border-color: var(--gold-bright); transform: translateY(-2px); }
+  .btn-ghost {
+    padding: 1.1rem 2.4rem; background: transparent;
+    color: var(--gold-bright); text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
+    border: 1px solid var(--line-strong); transition: all 0.3s;
+  }
+  .btn-ghost:hover { border-color: var(--gold); background: rgba(201, 168, 76, 0.06); }
+
+  /* Side card */
+  .alt-card {
+    border: 1px solid var(--line-strong);
+    background: rgba(15, 30, 66, 0.6);
+    padding: 3rem;
+    position: relative;
+    backdrop-filter: blur(10px);
+  }
+  .alt-card::before, .alt-card::after {
+    content: ''; position: absolute;
+    width: 24px; height: 24px;
+    border: 1px solid var(--gold);
+  }
+  .alt-card::before { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+  .alt-card::after { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+  .alt-card .label { display: block; margin-bottom: 1.5rem; }
+  .alt-card h3 {
+    font-size: 1.5rem;
+    color: var(--cream); margin-bottom: 1.5rem;
+    font-style: italic; line-height: 1.3;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .alt-card .alt-row {
+    display: flex; justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.95rem;
+  }
+  .alt-card .alt-row:last-child { border-bottom: none; }
+  .alt-card .alt-row .k {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem; letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cream-soft); opacity: 0.7;
+  }
+  .alt-card .alt-row .v {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold-bright); font-weight: 500;
+    font-style: italic;
+    text-align: right;
+  }
+
+  section { padding: 8rem 3rem; position: relative; }
+  .wrap { max-width: 1280px; margin: 0 auto; }
+  .section-head {
+    text-align: center; margin-bottom: 5rem;
+    max-width: 900px; margin-left: auto; margin-right: auto;
+  }
+  .section-head .label { display: inline-block; margin-bottom: 1.5rem; }
+  .section-head h2 {
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    margin-bottom: 1.5rem; color: var(--cream);
+  }
+  .section-head p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-style: italic;
+    color: var(--cream-soft); line-height: 1.55;
+  }
+
+  /* PREMISE */
+  .premise {
+    background: var(--navy-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .premise-grid {
+    display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; align-items: start;
+  }
+  .premise-grid h2 {
+    font-size: clamp(2.2rem, 4vw, 3.6rem);
+    color: var(--cream); margin-bottom: 1.5rem;
+  }
+  .premise-grid .left .label { margin-bottom: 1.5rem; display: inline-block; }
+  .premise-grid .left p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.3rem;
+    color: var(--gold-pale); line-height: 1.55;
+  }
+  .premise-grid .right p {
+    font-size: 1.1rem; color: var(--cream-soft);
+    margin-bottom: 1.4rem; line-height: 1.7;
+  }
+  .premise-grid .right p strong { color: var(--gold-bright); font-weight: 500; }
+  .premise-grid .right p:first-child::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5rem; color: var(--gold);
+    float: left; line-height: 0.85;
+    padding: 0.4rem 0.8rem 0 0; font-weight: 400;
+  }
+  @media (max-width: 900px) {
+    .premise-grid { grid-template-columns: 1fr; gap: 3rem; }
+  }
+
+  /* TIERS */
+  .tiers-stack { display: grid; gap: 1.8rem; }
+  .tier {
+    border: 1px solid var(--line);
+    background: rgba(10, 21, 48, 0.5);
+    padding: 3rem 3.5rem;
+    display: grid;
+    grid-template-columns: 80px 1fr 280px;
+    gap: 3rem;
+    align-items: center;
+    transition: all 0.4s;
+    position: relative;
+  }
+  .tier:hover {
+    border-color: var(--line-strong);
+    background: rgba(15, 30, 66, 0.7);
+    transform: translateX(6px);
+  }
+  .tier.featured {
+    border-color: var(--gold);
+    background: rgba(201, 168, 76, 0.04);
+  }
+  .tier.featured::before {
+    content: 'MOST CHOSEN';
+    position: absolute;
+    top: -10px; left: 3rem;
+    background: var(--gold);
+    color: var(--navy-deepest);
+    padding: 0.3rem 0.8rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+  }
+  .tier-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 3rem;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .tier-body h3 {
+    font-size: 1.9rem;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+  }
+  .tier-body .tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-bright);
+    font-size: 1.15rem;
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+  .tier-body p { color: var(--cream-soft); line-height: 1.65; font-size: 0.98rem; margin-bottom: 0.6rem; }
+  .tier-body p.format-note {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.85;
+    margin-top: 0.6rem;
+  }
+  .tier-side {
+    text-align: right;
+    border-left: 1px solid var(--line);
+    padding-left: 2.5rem;
+  }
+  .tier-side .price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    color: var(--gold-bright);
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    line-height: 1.1;
+  }
+  .tier-side .price-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--cream);
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+  }
+  .tier-side .price-note {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cream-soft);
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  .tier-side .btn-primary { display: inline-block; padding: 0.85rem 1.8rem; font-size: 0.7rem; }
+  @media (max-width: 1000px) {
+    .tier { grid-template-columns: 60px 1fr; gap: 1.5rem; padding: 2.5rem; }
+    .tier-side {
+      grid-column: 1 / -1;
+      text-align: left;
+      border-left: none;
+      border-top: 1px solid var(--line);
+      padding-left: 0;
+      padding-top: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+
+  /* WHAT ONE SESSION DELIVERS */
+  .delivery {
+    background: var(--navy-deepest);
+  }
+  .delivery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid var(--line);
+  }
+  .delivery-cell {
+    padding: 3rem 2.4rem;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: rgba(15, 30, 66, 0.4);
+    transition: background 0.4s;
+  }
+  .delivery-cell:hover { background: rgba(26, 43, 92, 0.6); }
+  .delivery-cell:nth-child(3n) { border-right: none; }
+  .delivery-cell:nth-last-child(-n+3) { border-bottom: none; }
+  .delivery-cell .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--gold);
+    margin-bottom: 1.4rem;
+    display: block;
+  }
+  .delivery-cell h3 {
+    font-size: 1.55rem; color: var(--cream);
+    margin-bottom: 0.9rem; line-height: 1.15;
+  }
+  .delivery-cell p { color: var(--cream-soft); font-size: 0.96rem; line-height: 1.65; }
+  @media (max-width: 900px) {
+    .delivery-grid { grid-template-columns: 1fr; }
+    .delivery-cell { border-right: none !important; border-bottom: 1px solid var(--line) !important; }
+    .delivery-cell:last-child { border-bottom: none !important; }
+  }
+
+  /* WHO REACHES OUT */
+  .who {
+    background: var(--navy-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .who-list {
+    max-width: 980px; margin: 0 auto;
+    display: grid; gap: 1rem;
+  }
+  .who-item {
+    border-left: 3px solid var(--gold);
+    padding: 1.6rem 2rem;
+    background: rgba(10, 21, 48, 0.5);
+    transition: all 0.3s;
+  }
+  .who-item:hover {
+    border-left-width: 6px;
+    padding-left: 1.7rem;
+    background: rgba(15, 30, 66, 0.7);
+  }
+  .who-item h3 {
+    font-size: 1.3rem;
+    color: var(--gold-bright);
+    margin-bottom: 0.4rem;
+    font-style: italic;
+  }
+  .who-item p { color: var(--cream-soft); font-size: 0.98rem; line-height: 1.55; }
+
+  /* CONVERSATION */
+  .conversation {
+    background: var(--navy-deepest);
+  }
+  .conv-flow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .cstep {
+    border-top: 1px solid var(--line-strong);
+    padding-top: 2rem;
+    counter-increment: cstep;
+    position: relative;
+  }
+  .cstep::before {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--gold);
+    margin-bottom: 0.8rem;
+    display: block;
+    letter-spacing: 0.05em;
+  }
+  .cstep:nth-child(1)::before { content: 'Minute 1–10'; }
+  .cstep:nth-child(2)::before { content: 'Minute 10–35'; }
+  .cstep:nth-child(3)::before { content: 'Minute 35–70'; }
+  .cstep:nth-child(4)::before { content: 'Minute 70–90'; }
+  .cstep h3 { font-size: 1.4rem; color: var(--cream); margin-bottom: 0.8rem; line-height: 1.2; }
+  .cstep p { color: var(--cream-soft); font-size: 0.95rem; line-height: 1.65; }
+  @media (max-width: 900px) { .conv-flow { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .conv-flow { grid-template-columns: 1fr; } }
+
+  /* ARITHMETIC */
+  .arith {
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.06), transparent 70%),
+      var(--navy-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .arith-table {
+    max-width: 1080px; margin: 0 auto;
+    border: 1px solid var(--line);
+    background: rgba(10, 21, 48, 0.5);
+  }
+  .arith-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 220px;
+    border-bottom: 1px solid var(--line);
+  }
+  .arith-row:last-child { border-bottom: none; }
+  .arith-row.head { background: rgba(201, 168, 76, 0.05); }
+  .arith-row.head > div {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--gold);
+    padding: 1.5rem 2rem;
+  }
+  .arith-row > div { padding: 1.8rem 2rem; border-right: 1px solid var(--line); }
+  .arith-row > div:last-child { border-right: none; }
+  .arith-row .what {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem; color: var(--cream); font-style: italic;
+  }
+  .arith-row .desc { color: var(--cream-soft); font-size: 0.95rem; line-height: 1.6; }
+  .arith-row .val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; color: var(--gold-bright);
+    text-align: right; font-weight: 500;
+  }
+  .arith-row.total { background: rgba(201, 168, 76, 0.08); }
+  .arith-row.total .what { color: var(--gold-bright); font-size: 1.4rem; }
+  .arith-row.total .val { color: var(--gold-pale); font-size: 1.6rem; }
+  @media (max-width: 900px) {
+    .arith-row { grid-template-columns: 1fr; }
+    .arith-row > div { border-right: none; border-bottom: 1px solid var(--line); padding: 1.4rem; }
+    .arith-row > div:last-child { border-bottom: none; }
+    .arith-row .val { text-align: left; }
+  }
+  .arith-note {
+    text-align: center; margin-top: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.25rem;
+    color: var(--gold-pale); max-width: 720px;
+    margin-left: auto; margin-right: auto; line-height: 1.55;
+  }
+
+  /* TESTIMONIAL */
+  .feature-quote {
+    background: var(--navy-deepest);
+    text-align: center;
+    padding: 8rem 3rem;
+  }
+  .feature-quote blockquote {
+    max-width: 1000px; margin: 0 auto;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.6rem, 3.2vw, 2.8rem);
+    line-height: 1.4; color: var(--cream); font-weight: 300;
+  }
+  .feature-quote blockquote::before {
+    content: '\201C'; display: block;
+    font-size: 6rem; color: var(--gold);
+    line-height: 1; margin-bottom: 1rem; opacity: 0.6;
+  }
+  .feature-quote .attrib {
+    margin-top: 2.5rem; padding-top: 2rem;
+    border-top: 1px solid var(--line);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--gold);
+    display: inline-block;
+  }
+  .feature-quote .attrib span { display: block; color: var(--cream-soft); margin-top: 0.4rem; opacity: 0.7; font-weight: 400; }
+
+  /* FAQ */
+  .faq {
+    background: var(--navy-deep);
+    border-top: 1px solid var(--line);
+  }
+  .faq-list { max-width: 980px; margin: 0 auto; }
+  details.faq-item {
+    border-bottom: 1px solid var(--line);
+    padding: 1.8rem 0;
+  }
+  details.faq-item summary {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: var(--cream);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s;
+  }
+  details.faq-item summary::-webkit-details-marker { display: none; }
+  details.faq-item summary::after {
+    content: '+';
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.3rem; color: var(--gold);
+    font-weight: 300; transition: transform 0.3s;
+  }
+  details.faq-item[open] summary::after { transform: rotate(45deg); }
+  details.faq-item summary:hover { color: var(--gold-bright); }
+  details.faq-item p {
+    margin-top: 1.2rem;
+    color: var(--cream-soft);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  /* FINAL */
+  .final {
+    padding: 10rem 3rem;
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.12), transparent 65%),
+      var(--navy-deepest);
+    text-align: center;
+    border-top: 1px solid var(--line);
+  }
+  .final .label { display: inline-block; margin-bottom: 1.8rem; }
+  .final h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    color: var(--cream); margin-bottom: 2rem;
+    max-width: 18ch; margin-left: auto; margin-right: auto;
+  }
+  .final p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.4rem;
+    color: var(--gold-pale); max-width: 60ch;
+    margin: 0 auto 3rem; line-height: 1.55;
+  }
+
+  footer {
+    padding: 4rem 3rem 2.5rem;
+    background: var(--navy-deepest);
+    border-top: 1px solid var(--line);
+    text-align: center;
+  }
+  footer .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; color: var(--cream);
+    margin-bottom: 0.8rem; letter-spacing: 0.04em;
+  }
+  footer .brand span { color: var(--gold); }
+  footer .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 2rem;
+  }
+  footer .copy { color: var(--cream-soft); font-size: 0.85rem; opacity: 0.6; }
+
+  .reveal {
+    opacity: 0; transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<nav class="topbar">
+  <a href="https://www.saschagorokhoff.com/" class="brand">Sascha <span>Gorokhoff</span></a>
+  <div class="nav-links">
+    <a href="#tiers">The Tiers</a>
+    <a href="#delivery">What You Get</a>
+    <a href="#arithmetic">The Math</a>
+    <a href="#apply" class="nav-cta">Apply</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-tag">
+        <span class="line"></span>
+        <span class="label">Private Counsel · Worldwide · Online · By Application</span>
+      </div>
+      <h1>One Conversation at the <em>Altitude of Your Actual Life.</em></h1>
+      <p class="hero-sub">There is a category of human being whose challenges are not solvable by reading another book, hiring another consultant, or attending another conference. They require something rarer: a single, unfiltered conversation with someone whose statistical rarity matches their own. That is what private 1:1 sessions with Sascha Gorokhoff are for — delivered worldwide via secure video, in your native language, with zero logistical overhead.</p>
+      <div class="cta-row">
+        <a href="#apply" class="btn-primary">Submit Application</a>
+        <a href="#tiers" class="btn-ghost">Explore the Tiers</a>
+      </div>
+    </div>
+
+    <aside class="alt-card">
+      <span class="label">The Strategic Session</span>
+      <h3>Trajectory-altering clarity. Delivered in one conversation.</h3>
+      <div class="alt-row"><span class="k">Format</span><span class="v">90 Minutes · 1:1</span></div>
+      <div class="alt-row"><span class="k">Investment</span><span class="v">$10,000</span></div>
+      <div class="alt-row"><span class="k">Delivery</span><span class="v">Secure Video · Worldwide</span></div>
+      <div class="alt-row"><span class="k">Languages</span><span class="v">EN · FR · DE</span></div>
+      <div class="alt-row"><span class="k">Discovery Calls</span><span class="v">None</span></div>
+      <div class="alt-row"><span class="k">Access</span><span class="v">Application Only</span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- PREMISE -->
+<section class="premise">
+  <div class="wrap">
+    <div class="premise-grid">
+      <div class="left">
+        <span class="label">The Premise</span>
+        <h2>Most coaches help you <em>solve a problem.</em><br />Sascha helps you change <em>the size of who you are.</em></h2>
+        <p>"I am not in the business of motivation. I am in the business of recalibration. The version of you that walks into the conversation is not the version of you that walks out."</p>
+      </div>
+      <div class="right">
+        <p>By the time most accomplished people reach out to Sascha, they have already worked with the conventional best — the executive coaches, the strategy consultants, the high-priced advisors. <strong>The reason they call Sascha is precisely because conventional excellence is not what is missing.</strong></p>
+        <p>What is missing is the rarest commodity in their world: a conversation with someone who can actually meet them at the altitude of their real challenges. Someone whose lived life — not credentials, not theory, lived life — operates at that altitude. Someone who grew up inside the rooms they are now navigating. Someone who has walked away from things most people would die to acquire — and who can, therefore, see the situation without the blindness of those still trying to acquire.</p>
+        <p>One 90-minute online session with Sascha is not coaching. <strong>It is a recalibration of the operating system that runs your life</strong> — delivered by the only advisor on earth whose statistical profile is approximately 1 in 5 billion, available worldwide, in your native register, without a single hour of travel friction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIERS -->
+<section id="tiers">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">The Three Private Tiers</span>
+      <h2>Three Levels of <em>Private Counsel</em></h2>
+      <p>Each tier is application-vetted. Each session is held personally with Sascha. There is no associate, no junior coach, no surrogate. Online by default — with a select on-location option for VIP Half Days, when the right engagement calls for it.</p>
+    </div>
+
+    <div class="tiers-stack">
+
+      <div class="tier">
+        <div class="tier-num">i</div>
+        <div class="tier-body">
+          <h3>The Strategic Session</h3>
+          <span class="tagline">A single 90-minute online conversation that changes the trajectory of everything.</span>
+          <p>For the founder, executive, or principal who needs one unfiltered, high-altitude conversation with Sascha. Brought into focus through a structured pre-session intake, delivered live via secure video, and followed by a written strategic memorandum. No discovery calls. No filler. Pure execution-grade clarity — anywhere on earth.</p>
+          <p class="format-note">Format · Online via Secure Video · Worldwide</p>
+        </div>
+        <div class="tier-side">
+          <div class="price">$10,000</div>
+          <span class="price-note">90 Minutes · Single Session</span>
+          <a href="#apply" class="btn-primary">Apply</a>
+        </div>
+      </div>
+
+      <div class="tier featured">
+        <div class="tier-num">ii</div>
+        <div class="tier-body">
+          <h3>The VIP Half-Day</h3>
+          <span class="tagline">Half a day, one-to-one, fully focused on the trajectory of one extraordinary life.</span>
+          <p>Four hours of uninterrupted private session — the room, the air, the architecture, all custom-built for you. Multi-domain strategy. Mindset. Execution. Personal life. Family. Legacy. Includes strategic preparation, post-session memorandum, and 30-day execution support. Delivered online as the standard — with on-location available by exception when the engagement calls for it (all expenses covered by you at first-class standard).</p>
+          <p class="format-note">Format · Online $75K · On-Location $100K + Expenses</p>
+        </div>
+        <div class="tier-side">
+          <div class="price">$75,000</div>
+          <span class="price-sub">or $100,000 on-location</span>
+          <span class="price-note">4 Hours · Online or In-Person</span>
+          <a href="#apply" class="btn-primary">Apply</a>
+        </div>
+      </div>
+
+      <div class="tier">
+        <div class="tier-num">iii</div>
+        <div class="tier-body">
+          <h3>Sovereign Engagement</h3>
+          <span class="tagline">Confidential long-form strategic counsel for the world's most extraordinary individuals.</span>
+          <p>By invitation. For Fortune 500 CEOs, ninth-figure founders, celebrities, family-office principals, and sovereign individuals who require a permanent, deeply confidential advisory relationship. Bespoke architecture. Always-on access via secure video and encrypted channels. Reserved exclusively for the very few engagements Sascha holds open at any given time.</p>
+          <p class="format-note">Format · Secure Online · Always-On Access</p>
+        </div>
+        <div class="tier-side">
+          <div class="price">By Application</div>
+          <span class="price-sub">From Six Figures / Quarter</span>
+          <span class="price-note">Confidential · By Invitation</span>
+          <a href="#apply" class="btn-primary">Inquire</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT ONE SESSION DELIVERS -->
+<section class="delivery" id="delivery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">What You Receive</span>
+      <h2>What 90 Minutes With Sascha <em>Actually Delivers</em></h2>
+      <p>This is not a coaching session. It is a strategic recalibration delivered by a 1-in-5-billion human-development authority. Below is what walks out of the room with you — even when "the room" is the screen on your desk.</p>
+    </div>
+
+    <div class="delivery-grid">
+
+      <div class="delivery-cell">
+        <span class="num">i.</span>
+        <h3>Diagnostic Clarity</h3>
+        <p>The exact, named, articulated diagnosis of what is actually creating the ceiling you've been bumping into. Not the surface symptom you brought into the room. The structural one underneath.</p>
+      </div>
+
+      <div class="delivery-cell">
+        <span class="num">ii.</span>
+        <h3>The Strategic Reframe</h3>
+        <p>The single reframe that changes the entire shape of the situation. The one sentence — formed by a man who has walked through every form of impossible — that flips your perception from constrained to sovereign.</p>
+      </div>
+
+      <div class="delivery-cell">
+        <span class="num">iii.</span>
+        <h3>An Execution Architecture</h3>
+        <p>Not vague advice. A concrete, sequenced architecture for the next 30 to 90 days — drawn from Sascha's complete frameworks (BROKE → MILLIONAIRE → BILLIONAIRE → SEPARATION) and customized to your exact situation.</p>
+      </div>
+
+      <div class="delivery-cell">
+        <span class="num">iv.</span>
+        <h3>The Permission Slip</h3>
+        <p>Many of the most accomplished people Sascha works with do not need new information. They need authoritative permission to do what they already know they need to do. Sascha's life is the credential that grants it.</p>
+      </div>
+
+      <div class="delivery-cell">
+        <span class="num">v.</span>
+        <h3>A Written Strategic Memorandum</h3>
+        <p>Within 5 business days, you receive a written memorandum capturing the diagnosis, the reframe, the architecture, and the next 30/60/90 days. The document you will return to repeatedly across the next year.</p>
+      </div>
+
+      <div class="delivery-cell">
+        <span class="num">vi.</span>
+        <h3>A Permanent Reference Point</h3>
+        <p>Long after the session has ended, a Sascha conversation becomes a permanent reference point — the conversation you measure subsequent decisions against. The one that recalibrated everything that came after.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="who" id="who">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Who Reaches Out</span>
+      <h2>The Profiles Who Quietly Pick Up <em>The Phone</em></h2>
+      <p>Sascha does not work with everyone. The reverse is also true — not everyone is the right person to work with Sascha. Below are the profiles for whom this category of conversation is the right fit.</p>
+    </div>
+
+    <div class="who-list">
+      <div class="who-item">
+        <h3>The Founder at the Eight-Figure Threshold</h3>
+        <p>You have crossed seven figures and the next leap is structural — not tactical. The conventional advisors have run out of altitude. You need a single conversation with someone who has stood at the threshold and crossed it.</p>
+      </div>
+      <div class="who-item">
+        <h3>The CEO Carrying a Decision</h3>
+        <p>A board moment. A succession question. A category-defining strategic decision. You need one room to bring it into — held by an advisor of unimpeachable confidentiality and unmatched cultural calibration, anywhere on earth, on any schedule.</p>
+      </div>
+      <div class="who-item">
+        <h3>The Principal Navigating a Family Dynamic</h3>
+        <p>The wealth question is not the wealth. It is the family. The succession. The character. The legacy. You need an advisor formed inside European old-money, Geneva diplomatic culture, and lived demonstration of character through sacrifice.</p>
+      </div>
+      <div class="who-item">
+        <h3>The Public Figure at a Pivot Point</h3>
+        <p>You are a celebrity, athlete, or public-eye figure whose next move requires a kind of strategic clarity that cannot be developed inside your existing network. You need an outside altitude — and absolute discretion.</p>
+      </div>
+      <div class="who-item">
+        <h3>The Sovereign Individual Who Has Already Arrived</h3>
+        <p>You have already built what most people are still building toward. The question now is what comes after — and there are very few advisors on earth who can hold that conversation at the register required.</p>
+      </div>
+      <div class="who-item">
+        <h3>The Person Quietly Carrying Something Heavy</h3>
+        <p>It is not always a strategic question. Sometimes it is the inner weight of holding the position you hold. Sascha is one of the very few advisors equipped — by lived experience — to hold that conversation without flinching.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONVERSATION -->
+<section class="conversation">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">The Conversation Architecture</span>
+      <h2>What 90 Minutes With Sascha <em>Actually Looks Like</em></h2>
+      <p>Every session is custom — but the architecture beneath every session is consistent. Below is the four-phase shape of a Strategic Session.</p>
+    </div>
+
+    <div class="conv-flow">
+      <div class="cstep">
+        <h3>The Landing</h3>
+        <p>You log in. The room is held. The first ten minutes are about presence — establishing that this is not a discovery call, not a sales call, not an intake. It is a strategic conversation between two adults at altitude. The shift is immediate.</p>
+      </div>
+      <div class="cstep">
+        <h3>The Diagnosis</h3>
+        <p>The next twenty-five minutes locate the actual issue — not the one you brought in, the structural one underneath it. Sascha's diagnostic precision is built from 500+ books, 30+ years inside the rooms of the world's highest achievers, and a life that has tested every framework it teaches.</p>
+      </div>
+      <div class="cstep">
+        <h3>The Architecture</h3>
+        <p>Thirty-five minutes of co-architecting the path forward. The specific reframe. The strategic move sequence. The execution architecture for the next 30/60/90 days. This is where you take notes you will reference for the next decade.</p>
+      </div>
+      <div class="cstep">
+        <h3>The Anchor</h3>
+        <p>The final twenty minutes anchor the work. The named commitments. The sequenced first moves. The closing reframe. You leave the conversation knowing exactly what you are walking into Monday — and why it will not be the same Monday it would have been without this session.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARITHMETIC -->
+<section class="arith" id="arithmetic">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">The Honest Arithmetic</span>
+      <h2>Why the Fee Is the <em>Smallest Number</em> in the Comparison</h2>
+      <p>For the people Sascha works with, the question is not whether the fee is high. The question is whether the value is real. Below is the honest math.</p>
+    </div>
+
+    <div class="arith-table">
+      <div class="arith-row head">
+        <div>What You Receive</div>
+        <div>Comparable Equivalent</div>
+        <div style="text-align:right;">Approximate Value</div>
+      </div>
+
+      <div class="arith-row">
+        <div class="what">90 Minutes With a 1-in-5-Billion Authority</div>
+        <div class="desc">There is no comparable advisor on earth. The credential combination — Bottmingen, Champel, Crans-Montana, IHEID, IMD, INSEAD, four languages, six cultures, lived adversity, demonstrated character — is mathematically unprecedented.</div>
+        <div class="val">Beyond Comparison</div>
+      </div>
+
+      <div class="arith-row">
+        <div class="what">Faculty-Tier Strategic Architecture</div>
+        <div class="desc">A strategic session at Sascha's altitude is the equivalent of an IMD or INSEAD private engagement — at institutions whose own faculty engagements run at multiples of this fee.</div>
+        <div class="val">$50K – $100K Equivalent</div>
+      </div>
+
+      <div class="arith-row">
+        <div class="what">A Permanent Recalibration of Trajectory</div>
+        <div class="desc">For an executive operating at seven, eight, or nine figures, a single trajectory-altering reframe routinely produces returns measured in millions. The session is the smallest line in the math.</div>
+        <div class="val">$1M – $50M+</div>
+      </div>
+
+      <div class="arith-row">
+        <div class="what">Written Strategic Memorandum</div>
+        <div class="desc">A custom-written strategic document you will reference for years. The equivalent commissioned engagement at a top consulting firm runs into the multiples of this entire fee.</div>
+        <div class="val">$25K – $75K Equivalent</div>
+      </div>
+
+      <div class="arith-row">
+        <div class="what">Zero Travel Friction · Same-Week Availability Worldwide</div>
+        <div class="desc">No flight to book. No calendar lost to logistics. No jet-lag delivery. The session lands at full power whether you are in São Paulo, Singapore, or Stockholm — at the speed your decisions actually move.</div>
+        <div class="val">Strategic Multiplier</div>
+      </div>
+
+      <div class="arith-row total">
+        <div class="what">Sascha's Strategic Session</div>
+        <div class="desc" style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.2rem; color: var(--cream);">The honest math: at every tier, the fee is the smallest number on the page.</div>
+        <div class="val">$10,000</div>
+      </div>
+    </div>
+
+    <div class="arith-note">For the principals Sascha works with, one conversation routinely returns its investment within the first 90 days — and continues compounding for a decade.</div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="feature-quote">
+  <blockquote>
+    Sascha just <em style="color: var(--gold-bright); font-style: italic;">gets it.</em> He is incredibly knowledgeable in ways I couldn't see until after meeting with him. He sees things I couldn't see before.
+  </blockquote>
+  <div class="attrib">Ben C.<span>"Ben the Automator" — Business Leader</span></div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Frequently Considered</span>
+      <h2>The Questions That Tend to <em>Arrive Before</em> the Application</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>Is there a discovery call before booking?</summary>
+        <p>No. Sascha does not hold discovery calls. The Strategic Session itself is the conversation. The pre-session intake is structured, written, and reviewed personally — which is what makes the 90 minutes immediately substantive rather than informational. This is one of the things that makes the session valuable.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Will I be working with Sascha personally — or with an associate?</summary>
+        <p>Every session, at every tier, is held personally with Sascha. There is no associate, no junior coach, no surrogate. The signal-to-noise ratio of working directly with a 1-in-5-billion authority is the entire point.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What happens after I submit my application?</summary>
+        <p>Sascha personally reviews every application. Response within 7 business days. If approved, an intake form is delivered. Once intake is complete and the engagement is confirmed, the session is scheduled. The full architecture from application to session typically completes within 14 business days.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are sessions delivered online or in-person?</summary>
+        <p>Online by default — Sascha's primary format is secure video, which makes his work accessible worldwide, in any time zone, in your native language, with zero travel friction. The VIP Half Day can be delivered on-location ($100K + first-class travel and five-star accommodation expenses) when the engagement specifically calls for in-person presence.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What languages can the session be conducted in?</summary>
+        <p>English, French, German, or Swiss-German — all native, all delivered without an interpreter, all at the strategic register required. Sascha is one of a very small number of advisors on earth who can conduct a strategic conversation at this altitude in four languages.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is the confidentiality framework?</summary>
+        <p>All engagements are governed by a sovereign-tier confidentiality protocol. The conversation, the diagnosis, the strategic architecture, and the existence of the engagement itself remain absolutely confidential. This is non-negotiable and applies at every tier.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final" id="apply">
+  <span class="label">Approximately 1 in 5 Billion</span>
+  <h2>One Conversation. <em>One Trajectory.</em> One Permanent Reference Point.</h2>
+  <p>Sascha holds a strictly limited number of private sessions each month. Every application is reviewed personally. The right altitude, the right discretion, the right advisor — for the moment in your life that requires nothing less.</p>
+  <div class="cta-row" style="justify-content: center;">
+    <a href="https://www.saschagorokhoff.com/contact" class="btn-primary">Submit Application</a>
+    <a href="https://www.saschagorokhoff.com/" class="btn-ghost">Return to Sascha.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">Sascha <span>Gorokhoff</span></div>
+  <div class="tag">Swiss-American · Worldwide · 1 in 5 Billion</div>
+  <div class="copy">© 2026 Sascha Gorokhoff · All Rights Reserved · Serving Worldwide</div>
+</footer>
+
+</div>
+
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.section-head, .tier, .delivery-cell, .who-item, .cstep, .arith-row, .faq-item').forEach(el => {
+    el.classList.add('reveal');
+    obs.observe(el);
+  });
+</script>
+
+</body>
+</html>

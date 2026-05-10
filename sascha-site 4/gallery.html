@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sascha Gorokhoff — Photography & Visual Library | The Image Archive of a 1-in-5-Billion Life</title>
+<meta name="description" content="The visual archive of Sascha Gorokhoff — Swiss-American executive coach, leadership advisor, and keynote speaker. Editorial portraits, formation locations, on-stage moments, and life captured at the register of 1 in 5 billion. EN · FR · DE · Worldwide." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter+Tight:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     SASCHA GOROKHOFF — VISUAL LIBRARY
+     Navy / Gold / Cream — matching saschagorokhoff.com
+     Refined editorial luxury · museum-grade gallery
+     ============================================================ */
+
+  :root {
+    --navy-deepest: #050B1E;
+    --navy-deep: #0A1530;
+    --navy: #0F1E42;
+    --navy-mid: #1A2B5C;
+    --navy-light: #2A3D75;
+    --gold: #C9A84C;
+    --gold-bright: #E8CC80;
+    --gold-pale: #F4E5B8;
+    --gold-deep: #8E7530;
+    --cream: #F5EFE0;
+    --cream-soft: #EDE5D0;
+    --line: rgba(201, 168, 76, 0.22);
+    --line-strong: rgba(201, 168, 76, 0.45);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter Tight', sans-serif;
+    background: var(--navy-deepest);
+    color: var(--cream);
+    line-height: 1.55;
+    overflow-x: hidden;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(201, 168, 76, 0.06), transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(201, 168, 76, 0.04), transparent 50%);
+    z-index: 1;
+  }
+  body::after {
+    content: ''; position: fixed; inset: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.5; z-index: 1; mix-blend-mode: overlay;
+  }
+  .container { position: relative; z-index: 2; }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  h1 em, h2 em, h3 em { font-style: italic; color: var(--gold-bright); font-weight: 400; }
+
+  .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* ===== NAV ===== */
+  nav.topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1.2rem 3rem;
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(5, 11, 30, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav.topbar .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; color: var(--cream);
+    text-decoration: none; letter-spacing: 0.04em;
+  }
+  nav.topbar .brand span { color: var(--gold); }
+  nav.topbar .nav-links { display: flex; gap: 2.4rem; align-items: center; }
+  nav.topbar .nav-links a {
+    color: var(--cream-soft); text-decoration: none;
+    font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace; transition: color 0.3s;
+  }
+  nav.topbar .nav-links a:hover { color: var(--gold-bright); }
+  nav.topbar .nav-cta {
+    padding: 0.7rem 1.4rem; border: 1px solid var(--gold);
+    color: var(--gold-bright) !important; transition: all 0.3s;
+  }
+  nav.topbar .nav-cta:hover { background: var(--gold); color: var(--navy-deepest) !important; }
+  @media (max-width: 900px) {
+    nav.topbar { padding: 1rem 1.2rem; }
+    nav.topbar .nav-links a:not(.nav-cta) { display: none; }
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 90vh;
+    padding: 11rem 3rem 6rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative;
+    background:
+      radial-gradient(ellipse at 50% 100%, rgba(201, 168, 76, 0.10), transparent 60%),
+      linear-gradient(180deg, var(--navy-deepest) 0%, var(--navy-deep) 100%);
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw; max-width: 1200px;
+    aspect-ratio: 1;
+    border: 1px solid var(--line);
+    border-radius: 50%; opacity: 0.5;
+  }
+  .hero::after {
+    content: ''; position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw; max-width: 800px;
+    aspect-ratio: 1;
+    border: 1px solid var(--line);
+    border-radius: 50%; opacity: 0.3;
+  }
+  .hero-inner { max-width: 1280px; margin: 0 auto; width: 100%; position: relative; z-index: 3; text-align: center; }
+  .hero-tag {
+    display: flex; align-items: center; justify-content: center; gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .hero-tag .line { width: 50px; height: 1px; background: var(--gold); }
+  .hero h1 {
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 300; color: var(--cream);
+    margin: 0 auto 2rem; max-width: 18ch;
+  }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 300; font-style: italic;
+    color: var(--cream-soft);
+    max-width: 64ch; line-height: 1.45;
+    margin: 0 auto 3rem;
+  }
+
+  /* ===== SECTION SHELL ===== */
+  section { padding: 7rem 3rem; position: relative; }
+  .wrap { max-width: 1280px; margin: 0 auto; }
+  .wrap-wide { max-width: 1480px; margin: 0 auto; }
+  .section-head {
+    text-align: center; margin-bottom: 5rem;
+    max-width: 900px; margin-left: auto; margin-right: auto;
+  }
+  .section-head .label { display: inline-block; margin-bottom: 1.5rem; }
+  .section-head h2 {
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    margin-bottom: 1.5rem; color: var(--cream);
+  }
+  .section-head p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-style: italic;
+    color: var(--cream-soft); line-height: 1.55;
+  }
+
+  /* ====================================================================
+     UNIVERSAL IMAGE FRAME
+     Wrap any <img> in .frame to get a gold-bordered editorial treatment
+     ==================================================================== */
+  .frame {
+    position: relative;
+    border: 1px solid var(--line-strong);
+    background: var(--navy-deepest);
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  .frame::before, .frame::after {
+    content: ''; position: absolute;
+    width: 24px; height: 24px;
+    border: 1px solid var(--gold);
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0.85;
+    transition: all 0.5s ease;
+  }
+  .frame::before { top: 8px; left: 8px; border-right: none; border-bottom: none; }
+  .frame::after { bottom: 8px; right: 8px; border-left: none; border-top: none; }
+  .frame:hover {
+    border-color: var(--gold);
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6),
+                0 0 0 1px var(--line-strong);
+  }
+  .frame:hover::before, .frame:hover::after {
+    opacity: 1;
+    width: 32px; height: 32px;
+  }
+  .frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .frame:hover img {
+    transform: scale(1.04);
+  }
+
+  /* ====================================================================
+     IMAGE PLACEHOLDER (when no <img> is set yet)
+     ==================================================================== */
+  .img-placeholder {
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(15, 30, 66, 0.9) 0%, rgba(10, 21, 48, 0.95) 100%);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 2rem;
+    position: relative;
+    min-height: 200px;
+  }
+  .img-placeholder::after {
+    content: ''; position: absolute;
+    inset: 16px;
+    border: 1px dashed var(--line);
+    pointer-events: none;
+  }
+  .img-placeholder .ph-icon {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 2.4rem; color: var(--gold);
+    margin-bottom: 0.6rem; opacity: 0.7;
+  }
+  .img-placeholder .ph-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+    margin-bottom: 0.5rem;
+  }
+  .img-placeholder .ph-hint {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--cream-soft);
+    font-size: 0.92rem;
+    opacity: 0.7;
+    line-height: 1.4;
+    max-width: 28ch;
+  }
+
+  /* ====================================================================
+     SECTION 1 — EDITORIAL HERO PORTRAIT
+     A single dominant portrait, magazine cover treatment
+     ==================================================================== */
+  .editorial {
+    background: var(--navy-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .editorial-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .editorial-portrait {
+    aspect-ratio: 4 / 5;
+  }
+  .editorial-text .label { display: inline-block; margin-bottom: 1.5rem; }
+  .editorial-text h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1.8rem;
+    color: var(--cream);
+  }
+  .editorial-text .deck {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--gold-bright);
+    margin-bottom: 1.8rem;
+    line-height: 1.5;
+  }
+  .editorial-text p {
+    color: var(--cream-soft);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.4rem;
+  }
+  .editorial-text .credit {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    margin-top: 2rem;
+  }
+  @media (max-width: 900px) {
+    .editorial-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  }
+
+  /* ====================================================================
+     SECTION 2 — MOSAIC GRID
+     Asymmetric editorial grid, magazine-style layout
+     ==================================================================== */
+  .mosaic-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 240px 240px 240px;
+    gap: 1rem;
+  }
+  .mosaic-grid .frame { width: 100%; height: 100%; }
+  /* Cell positions for mosaic */
+  .m-cell-1 { grid-column: 1 / 3; grid-row: 1 / 3; } /* big top-left */
+  .m-cell-2 { grid-column: 3 / 4; grid-row: 1 / 2; }
+  .m-cell-3 { grid-column: 4 / 5; grid-row: 1 / 2; }
+  .m-cell-4 { grid-column: 3 / 5; grid-row: 2 / 3; } /* wide right-mid */
+  .m-cell-5 { grid-column: 1 / 2; grid-row: 3 / 4; }
+  .m-cell-6 { grid-column: 2 / 4; grid-row: 3 / 4; } /* wide bottom-mid */
+  .m-cell-7 { grid-column: 4 / 5; grid-row: 3 / 4; }
+
+  @media (max-width: 900px) {
+    .mosaic-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(7, 220px);
+      gap: 0.8rem;
+    }
+    .m-cell-1, .m-cell-2, .m-cell-3, .m-cell-4,
+    .m-cell-5, .m-cell-6, .m-cell-7 {
+      grid-column: auto !important;
+      grid-row: auto !important;
+    }
+    .m-cell-1 { grid-column: 1 / 3 !important; }
+    .m-cell-4 { grid-column: 1 / 3 !important; }
+    .m-cell-6 { grid-column: 1 / 3 !important; }
+  }
+
+  /* ====================================================================
+     SECTION 3 — FORMATION LOCATIONS
+     Three Swiss formations, large editorial cards with captions
+     ==================================================================== */
+  .locations-section {
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.06), transparent 70%),
+      var(--navy-deepest);
+  }
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+  .location-card {
+    display: flex; flex-direction: column;
+  }
+  .location-card .frame {
+    aspect-ratio: 3 / 4;
+    margin-bottom: 1.5rem;
+  }
+  .location-card .coord {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+  .location-card h3 {
+    font-size: 1.7rem;
+    color: var(--cream);
+    margin-bottom: 0.3rem;
+  }
+  .location-card .region {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-bright);
+    font-size: 1.05rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+  .location-card p {
+    color: var(--cream-soft);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  @media (max-width: 900px) {
+    .locations-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ====================================================================
+     SECTION 4 — FULL-BLEED IMMERSIVE
+     One large image, full-width editorial
+     ==================================================================== */
+  .immersive {
+    background: var(--navy-deep);
+    padding: 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .immersive-media {
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    background: var(--navy-deepest);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+  }
+  .immersive-media .frame {
+    width: 100%; height: 100%;
+    border: none;
+  }
+  .immersive-media .frame::before, .immersive-media .frame::after {
+    display: none;
+  }
+  .immersive-caption {
+    padding: 4rem 3rem 5rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .immersive-caption .label { display: inline-block; margin-bottom: 1.2rem; }
+  .immersive-caption h3 {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    color: var(--cream);
+    margin-bottom: 1rem;
+  }
+  .immersive-caption p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-pale);
+    font-size: 1.25rem;
+    line-height: 1.55;
+  }
+  @media (max-width: 700px) {
+    .immersive-media { aspect-ratio: 4 / 3; }
+    .immersive-caption { padding: 2.5rem 1.5rem 3rem; }
+  }
+
+  /* ====================================================================
+     SECTION 5 — KEYNOTE / ON-STAGE
+     Three-column landscape grid for stage and broadcast moments
+     ==================================================================== */
+  .stage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .stage-card .frame {
+    aspect-ratio: 3 / 2;
+    margin-bottom: 1.2rem;
+  }
+  .stage-card .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .stage-card h3 {
+    font-size: 1.35rem;
+    color: var(--cream);
+    margin-bottom: 0.3rem;
+  }
+  .stage-card .moment {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-bright);
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  @media (max-width: 900px) {
+    .stage-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .stage-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ====================================================================
+     SECTION 6 — PORTRAIT WALL
+     Six square portraits, museum wall layout
+     ==================================================================== */
+  .portrait-wall {
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.05), transparent 70%),
+      var(--navy-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .portraits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .portrait-card .frame {
+    aspect-ratio: 1 / 1;
+    margin-bottom: 1rem;
+  }
+  .portrait-card .caption {
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+  .portrait-card .caption .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold);
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+  .portrait-card .caption h4 {
+    font-size: 1.2rem;
+    color: var(--cream);
+    margin-bottom: 0.3rem;
+  }
+  .portrait-card .caption .sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cream-soft);
+    opacity: 0.7;
+  }
+  @media (max-width: 900px) {
+    .portraits-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 500px) {
+    .portraits-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ====================================================================
+     SECTION 7 — DIPTYCH (PAIRED IMAGES)
+     Two large companion images side by side, editorial pairing
+     ==================================================================== */
+  .diptych {
+    background: var(--navy-deepest);
+  }
+  .diptych-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .diptych-card .frame {
+    aspect-ratio: 4 / 5;
+    margin-bottom: 1.5rem;
+  }
+  .diptych-card h3 {
+    font-size: 1.6rem;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+  }
+  .diptych-card .deck {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-bright);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+  .diptych-card p {
+    color: var(--cream-soft);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  @media (max-width: 800px) {
+    .diptych-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ====================================================================
+     SECTION 8 — LIGHTBOX MASONRY (last library)
+     Dense visual archive — hover reveals caption
+     ==================================================================== */
+  .archive-section {
+    background: var(--navy-deep);
+    border-top: 1px solid var(--line);
+  }
+  .archive-grid {
+    column-count: 4;
+    column-gap: 1.2rem;
+  }
+  .archive-item {
+    break-inside: avoid;
+    margin-bottom: 1.2rem;
+    position: relative;
+  }
+  .archive-item .frame {
+    width: 100%;
+    /* aspect ratios vary — set per item via inline style or class */
+  }
+  .archive-item .ar-1 { aspect-ratio: 3 / 4; }
+  .archive-item .ar-2 { aspect-ratio: 1 / 1; }
+  .archive-item .ar-3 { aspect-ratio: 4 / 5; }
+  .archive-item .ar-4 { aspect-ratio: 4 / 3; }
+  .archive-item .ar-5 { aspect-ratio: 2 / 3; }
+  .archive-item .caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 1.2rem 1.4rem;
+    background: linear-gradient(180deg, transparent, rgba(5, 11, 30, 0.92));
+    color: var(--cream);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.4;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+    z-index: 4;
+    pointer-events: none;
+  }
+  .archive-item .caption .source {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+    opacity: 0.9;
+  }
+  .archive-item:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (max-width: 1100px) {
+    .archive-grid { column-count: 3; }
+  }
+  @media (max-width: 800px) {
+    .archive-grid { column-count: 2; }
+  }
+  @media (max-width: 500px) {
+    .archive-grid { column-count: 1; }
+  }
+
+  /* ====================================================================
+     QUOTE INTERLUDE
+     A simple gold-letter pull quote between sections
+     ==================================================================== */
+  .quote-interlude {
+    background: var(--navy-deepest);
+    text-align: center;
+    padding: 7rem 3rem;
+  }
+  .quote-interlude blockquote {
+    max-width: 1000px; margin: 0 auto;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.6rem, 3.2vw, 2.8rem);
+    line-height: 1.4;
+    color: var(--cream); font-weight: 300;
+  }
+  .quote-interlude blockquote::before {
+    content: '\201C'; display: block;
+    font-size: 6rem; color: var(--gold);
+    line-height: 1; margin-bottom: 1rem; opacity: 0.6;
+  }
+  .quote-interlude .attrib {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--gold);
+    display: inline-block;
+  }
+
+  /* ====================================================================
+     FINAL / CLOSING
+     ==================================================================== */
+  .final {
+    padding: 9rem 3rem;
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.12), transparent 65%),
+      var(--navy-deepest);
+    text-align: center;
+    border-top: 1px solid var(--line);
+  }
+  .final .label { display: inline-block; margin-bottom: 1.8rem; }
+  .final h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    color: var(--cream); margin-bottom: 2rem;
+    max-width: 18ch; margin-left: auto; margin-right: auto;
+  }
+  .final p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.4rem;
+    color: var(--gold-pale); max-width: 60ch;
+    margin: 0 auto 3rem; line-height: 1.55;
+  }
+  .cta-row {
+    display: flex; flex-wrap: wrap; gap: 1.2rem; justify-content: center;
+  }
+  .btn-primary {
+    padding: 1.1rem 2.4rem;
+    background: var(--gold); color: var(--navy-deepest);
+    text-decoration: none; font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
+    font-weight: 500; transition: all 0.3s;
+    border: 1px solid var(--gold); display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-bright); border-color: var(--gold-bright); transform: translateY(-2px); }
+  .btn-ghost {
+    padding: 1.1rem 2.4rem; background: transparent;
+    color: var(--gold-bright); text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
+    border: 1px solid var(--line-strong); transition: all 0.3s; display: inline-block;
+  }
+  .btn-ghost:hover { border-color: var(--gold); background: rgba(201, 168, 76, 0.06); }
+
+  /* ===== FOOTER ===== */
+  footer {
+    padding: 4rem 3rem 2.5rem;
+    background: var(--navy-deepest);
+    border-top: 1px solid var(--line);
+    text-align: center;
+  }
+  footer .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; color: var(--cream);
+    margin-bottom: 0.8rem; letter-spacing: 0.04em;
+  }
+  footer .brand span { color: var(--gold); }
+  footer .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 2rem;
+  }
+  footer .copy { color: var(--cream-soft); font-size: 0.85rem; opacity: 0.6; }
+
+  .reveal {
+    opacity: 0; transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ===== LIGHTBOX OVERLAY ===== */
+  .lightbox {
+    position: fixed; inset: 0;
+    background: rgba(5, 11, 30, 0.96);
+    backdrop-filter: blur(20px);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+  }
+  .lightbox.active { display: flex; }
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 86vh;
+    border: 1px solid var(--gold);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.7);
+  }
+  .lightbox .lb-close {
+    position: absolute;
+    top: 2rem; right: 2rem;
+    color: var(--gold);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid var(--gold);
+    padding: 0.7rem 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .lightbox .lb-close:hover { background: var(--gold); color: var(--navy-deepest); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- ===================== NAV ===================== -->
+<nav class="topbar">
+  <a href="https://www.saschagorokhoff.com/" class="brand">Sascha <span>Gorokhoff</span></a>
+  <div class="nav-links">
+    <a href="#editorial">Editorial</a>
+    <a href="#mosaic">The Archive</a>
+    <a href="#locations">Formation</a>
+    <a href="#stage">On Stage</a>
+    <a href="#book" class="nav-cta">Work With Sascha</a>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">
+      <span class="line"></span>
+      <span class="label">The Visual Archive · 1 in 5 Billion · Worldwide</span>
+      <span class="line"></span>
+    </div>
+    <h1>The Image Archive of a <em>1-in-5-Billion Life.</em></h1>
+    <p class="hero-sub">A curated visual record of the moments, environments, and presence of Sascha Gorokhoff. From the Swiss formation that produced the man, to the global stages that now amplify the work — assembled here at the register the work itself deserves.</p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 1 — EDITORIAL HERO PORTRAIT
+     The single dominant portrait, magazine cover energy.
+     ============================================================ -->
+
+<section class="editorial" id="editorial">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Editorial Portrait · No. 01</span>
+      <h2>The Man <em>Behind the Work.</em></h2>
+      <p>Every framework, every keynote, every conversation traces back to one source — and that source is captured here.</p>
+    </div>
+
+    <div class="editorial-grid">
+
+      <!-- ▼ EDITORIAL PORTRAIT — REPLACE WITH <img src="..."> ▼ -->
+      <div class="frame editorial-portrait">
+        <!-- <img src="YOUR_PORTRAIT_URL.jpg" alt="Sascha Gorokhoff — Editorial Portrait" /> -->
+        <div class="img-placeholder">
+          <span class="ph-icon">◆</span>
+          <span class="ph-text">Editorial Portrait Slot</span>
+          <span class="ph-hint">Replace this block with an &lt;img&gt; tag — recommended ratio 4:5 portrait</span>
+        </div>
+      </div>
+      <!-- ▲ END PORTRAIT BLOCK ▲ -->
+
+      <div class="editorial-text">
+        <span class="label">Sascha Gorokhoff</span>
+        <h2>Swiss-American. <em>Approximately 1 in 5 Billion.</em></h2>
+        <span class="deck">"Every layer of his profile makes the next statistically more improbable — until the combination itself becomes virtually unprecedented in human history."</span>
+        <p>Born in Basel. Formed in Bottmingen. Raised in Champel, Geneva's diplomatic quarter. Member of the Crans-Montana Golf Club since age fourteen, present at the Omega European Masters every year until leaving Switzerland. IHEID Geneva, IMD Lausanne, INSEAD Fontainebleau. Four native languages. Six cultures in his DNA. Five hundred-plus books. Three decades inside the rooms where global wealth and power actually operate — not as a tourist, as a native.</p>
+        <p>The portrait beside is the man whose life is the credential. The frameworks are autobiography reverse-engineered.</p>
+        <span class="credit">— Photographed worldwide · Editorial collection</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 2 — MOSAIC ARCHIVE GRID
+     Asymmetric editorial mosaic — magazine layout.
+     7 image cells in different sizes. Replace each .img-placeholder
+     with an <img> tag.
+     ============================================================ -->
+
+<section class="mosaic-section" id="mosaic">
+  <div class="wrap-wide">
+    <div class="section-head">
+      <span class="label">The Visual Archive</span>
+      <h2>A Life, In <em>Frames.</em></h2>
+      <p>Selected images from the archive — formation, presence, work, and life captured at register.</p>
+    </div>
+
+    <div class="mosaic-grid">
+
+      <!-- ▼ MOSAIC CELL 01 — Large feature, top-left ▼ -->
+      <div class="frame m-cell-1">
+        <!-- <img src="YOUR_IMAGE_01.jpg" alt="..." /> -->
+        <div class="img-placeholder">
+          <span class="ph-icon">◇</span>
+          <span class="ph-text">Image 01 · Feature</span>
+          <span class="ph-hint">Largest cell — landscape works best (4:3 or 16:9)</span>
+        </div>
+      </div>
+
+      <!-- ▼ MOSAIC CELL 02 ▼ -->
+      <div class="frame m-cell-2">
+        <div class="img-placeholder">
+          <span class="ph-icon">◇</span>
+          <span class="ph-text">Image 02</span>
+          <span class="ph-hint">Square or landscape</span>
+        </div>
+      </div>
+
+      <!-- ▼ MOSAIC CELL 03 ▼ -->
+      <div class="frame m-cell-3">
+        <div class="img-placeholder">
+          <span class="ph-icon">◇</span>
+          <span class="ph-text">Image 03</span>
+          <span class="ph-hint">Square or landscape</span>
+        </div>
+      </div>
+
+      <!-- ▼ MOSAIC CELL 04 — Wide right-mid ▼ -->
+      <div class="frame m-cell-4">
+        <div class="img-placeholder">
+          <span class="ph-icon">◇</span>
+          <span class="ph-text">Image 04 · Wide</span>
+          <span class="ph-hint">Landscape preferred (16:9)</span>
+        </div>
+      </div>
+
+      <!-- ▼ MOSAIC CELL 05 ▼ -->
+      <div class="frame m-cell-5">
+        <div class="img-placeholder">
+          <span class="ph-icon">◇</span>
+          <span class="ph-text">Image 05</span>
+          <span class="ph-hint">Square preferred</span>
+        </div>
+      </div>
+
+      <!-- ▼ MOSAIC CELL 06 — Wide bottom-mid ▼ -->
+      <div class="frame m-cell-6">
+        <div class="img-placeholder">
+          <span class="ph-icon">◇</span>
+          <span class="ph-text">Image 06 · Wide</span>
+          <span class="ph-hint">Landscape preferred (16:9)</span>
+        </div>
+      </div>
+
+      <!-- ▼ MOSAIC CELL 07 ▼ -->
+      <div class="frame m-cell-7">
+        <div class="img-placeholder">
+          <span class="ph-icon">◇</span>
+          <span class="ph-text">Image 07</span>
+          <span class="ph-hint">Square preferred</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     QUOTE INTERLUDE 01
+     ============================================================ -->
+
+<section class="quote-interlude">
+  <blockquote>
+    There is a fine line between victim and victory — that's just a couple of letters — <em style="color: var(--gold-bright); font-style: italic;">and you choose.</em>
+  </blockquote>
+  <div class="attrib">Sascha Gorokhoff</div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 3 — FORMATION LOCATIONS
+     Three Swiss formations: Bottmingen, Champel, Crans-Montana.
+     ============================================================ -->
+
+<section class="locations-section" id="locations">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">The Three Environments That Formed Him</span>
+      <h2>Bottmingen. Champel. <em>Crans-Montana.</em></h2>
+      <p>The visual record of the three Swiss environments that produced the 1-in-5-billion compound profile.</p>
+    </div>
+
+    <div class="locations-grid">
+
+      <!-- ▼ FORMATION 01 — Bottmingen ▼ -->
+      <div class="location-card">
+        <div class="frame">
+          <!-- <img src="bottmingen.jpg" alt="Bottmingen — Schloss Bottmingen, Basel" /> -->
+          <div class="img-placeholder">
+            <span class="ph-icon">◈</span>
+            <span class="ph-text">Bottmingen Image</span>
+            <span class="ph-hint">Schloss Bottmingen · castle village</span>
+          </div>
+        </div>
+        <span class="coord">47.55°N · 7.65°E · Birth — Age 15</span>
+        <h3>Bottmingen</h3>
+        <span class="region">The Swiss Castle Village · Basel</span>
+        <p>Where generational Swiss wealth quietly raises its next generation. Home to Switzerland's highest-income populations per capita. Schloss Bottmingen at its heart — a 13th-century moated water castle. Basel pharmaceutical heirs, private-bank partners, multi-generational Swiss-German industrial families.</p>
+      </div>
+
+      <!-- ▼ FORMATION 02 — Champel ▼ -->
+      <div class="location-card">
+        <div class="frame">
+          <!-- <img src="champel.jpg" alt="Champel — Geneva diplomatic quarter" /> -->
+          <div class="img-placeholder">
+            <span class="ph-icon">◈</span>
+            <span class="ph-text">Champel Image</span>
+            <span class="ph-hint">Geneva · diplomatic quarter</span>
+          </div>
+        </div>
+        <span class="coord">46.20°N · 6.14°E · Age 15 — 34</span>
+        <h3>Champel</h3>
+        <span class="region">Geneva's Diplomatic Quarter</span>
+        <p>The most refined residential district of Geneva — by any honest measure the global capital of diplomacy. Tree-lined avenues. Belle Époque buildings. UN senior officials, Ambassadors, WTO/WHO/UNHCR directors. Pictet and Lombard Odier private bank partners. Twenty years of native fluency in the register of global power.</p>
+      </div>
+
+      <!-- ▼ FORMATION 03 — Crans-Montana ▼ -->
+      <div class="location-card">
+        <div class="frame">
+          <!-- <img src="crans-montana.jpg" alt="Crans-Montana Golf Club" /> -->
+          <div class="img-placeholder">
+            <span class="ph-icon">◈</span>
+            <span class="ph-text">Crans-Montana Image</span>
+            <span class="ph-hint">Crans-sur-Sierre Golf Club · 1,500m</span>
+          </div>
+        </div>
+        <span class="coord">46.31°N · 7.48°E · Member Since Age 14</span>
+        <h3>Crans-Montana</h3>
+        <span class="region">The Alpine Plateau of Legends</span>
+        <p>The Crans-sur-Sierre Golf Club — designed by Severiano Ballesteros, second course by Jack Nicklaus, home of the Omega European Masters since 1939. Every September: European aristocracy, Gulf royalty, discrete Swiss banking, quiet UHNW families. Sascha attended every year until leaving Switzerland.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 4 — FULL-BLEED IMMERSIVE
+     One full-width landscape image with editorial caption.
+     ============================================================ -->
+
+<section class="immersive" id="immersive">
+  <!-- ▼ FULL-BLEED IMAGE — REPLACE WITH <img> ▼ -->
+  <div class="immersive-media">
+    <div class="frame">
+      <!-- <img src="YOUR_LANDSCAPE_HERO.jpg" alt="..." /> -->
+      <div class="img-placeholder">
+        <span class="ph-icon">◇</span>
+        <span class="ph-text">Full-Bleed Image</span>
+        <span class="ph-hint">Cinematic landscape · 21:9 ratio recommended<br>Use this slot for an iconic location, on-stage moment, or signature image</span>
+      </div>
+    </div>
+  </div>
+  <!-- ▲ END FULL-BLEED ▲ -->
+
+  <div class="immersive-caption">
+    <span class="label">A Defining Moment</span>
+    <h3>Where the Work Was <em>Forged.</em></h3>
+    <p>One image. One register. The proof that what most people are told is impossible — never was.</p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 5 — KEYNOTE / ON-STAGE
+     Three landscape stage / broadcast moments.
+     ============================================================ -->
+
+<section class="stage-section" id="stage">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">On Stage · On Air · On Camera</span>
+      <h2>The Work, <em>Captured Live.</em></h2>
+      <p>Selected moments from keynotes, broadcasts, and on-camera conversations. The voice that recalibrates rooms, captured in stills.</p>
+    </div>
+
+    <div class="stage-grid">
+
+      <!-- ▼ STAGE MOMENT 01 ▼ -->
+      <div class="stage-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Stage Moment 01</span>
+            <span class="ph-hint">Keynote · landscape</span>
+          </div>
+        </div>
+        <span class="meta">— The Annual Online Summit · 2026</span>
+        <h3>From Broke to Billionaire — Live</h3>
+        <span class="moment">The closing transformation address — the ten seconds of silence before the standing ovation.</span>
+      </div>
+
+      <!-- ▼ STAGE MOMENT 02 ▼ -->
+      <div class="stage-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Stage Moment 02</span>
+            <span class="ph-hint">Broadcast · landscape</span>
+          </div>
+        </div>
+        <span class="meta">— The UPLIFT! Podcast · Studio</span>
+        <h3>The Long-Form Conversation</h3>
+        <span class="moment">Ninety minutes of unfiltered, on-the-record reflection on sovereignty, character, and the architecture of victory.</span>
+      </div>
+
+      <!-- ▼ STAGE MOMENT 03 ▼ -->
+      <div class="stage-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Stage Moment 03</span>
+            <span class="ph-hint">Virtual stage · landscape</span>
+          </div>
+        </div>
+        <span class="meta">— Multilingual Online Masterclass</span>
+        <h3>En Trois Langues Simultanément</h3>
+        <span class="moment">Native delivery in English, French, and German across a single broadcast — at full register, without a translator.</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 6 — PORTRAIT WALL
+     Six square portraits in a museum-wall layout.
+     Use for headshots, Gemma & Sascha, family, etc.
+     ============================================================ -->
+
+<section class="portrait-wall">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">The Portrait Wall</span>
+      <h2>Six Portraits. <em>One Life.</em></h2>
+      <p>Selected square-format portraits — the man, the moments, the people who matter.</p>
+    </div>
+
+    <div class="portraits-grid">
+
+      <!-- ▼ PORTRAIT 01 ▼ -->
+      <div class="portrait-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◆</span>
+            <span class="ph-text">Portrait 01</span>
+            <span class="ph-hint">Square 1:1</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="num">i.</span>
+          <h4>Editorial Headshot</h4>
+          <span class="sub">Studio · 2026</span>
+        </div>
+      </div>
+
+      <!-- ▼ PORTRAIT 02 ▼ -->
+      <div class="portrait-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◆</span>
+            <span class="ph-text">Portrait 02</span>
+            <span class="ph-hint">Square 1:1</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="num">ii.</span>
+          <h4>Sascha & Gemma</h4>
+          <span class="sub">The Marriage Behind the Work</span>
+        </div>
+      </div>
+
+      <!-- ▼ PORTRAIT 03 ▼ -->
+      <div class="portrait-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◆</span>
+            <span class="ph-text">Portrait 03</span>
+            <span class="ph-hint">Square 1:1</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="num">iii.</span>
+          <h4>Author Portrait</h4>
+          <span class="sub">From Victim to Victory</span>
+        </div>
+      </div>
+
+      <!-- ▼ PORTRAIT 04 ▼ -->
+      <div class="portrait-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◆</span>
+            <span class="ph-text">Portrait 04</span>
+            <span class="ph-hint">Square 1:1</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="num">iv.</span>
+          <h4>The Speaker</h4>
+          <span class="sub">Stage Portrait</span>
+        </div>
+      </div>
+
+      <!-- ▼ PORTRAIT 05 ▼ -->
+      <div class="portrait-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◆</span>
+            <span class="ph-text">Portrait 05</span>
+            <span class="ph-hint">Square 1:1</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="num">v.</span>
+          <h4>Daily Discipline</h4>
+          <span class="sub">The Athletic Practice</span>
+        </div>
+      </div>
+
+      <!-- ▼ PORTRAIT 06 ▼ -->
+      <div class="portrait-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◆</span>
+            <span class="ph-text">Portrait 06</span>
+            <span class="ph-hint">Square 1:1</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="num">vi.</span>
+          <h4>The Consultant</h4>
+          <span class="sub">In the Working Studio</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 7 — DIPTYCH (PAIRED IMAGES)
+     Two large companion images side by side — editorial pairing.
+     Ideal for "before / after", "two worlds", or "two truths".
+     ============================================================ -->
+
+<section class="diptych" id="diptych">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">The Diptych</span>
+      <h2>Two Truths. <em>One Sovereignty.</em></h2>
+      <p>Two companion images — chosen because they belong side by side. The pairing is the meaning.</p>
+    </div>
+
+    <div class="diptych-grid">
+
+      <!-- ▼ DIPTYCH PANEL 01 ▼ -->
+      <div class="diptych-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Diptych Image 01</span>
+            <span class="ph-hint">Portrait 4:5 ratio</span>
+          </div>
+        </div>
+        <h3>Switzerland</h3>
+        <span class="deck">— The first life. The formation.</span>
+        <p>Geneva apartment, BMW, Bern admission, federal political mandate, board seat at the largest business club in Geneva. Everything that, by every conventional measure, defines a Swiss pinnacle.</p>
+      </div>
+
+      <!-- ▼ DIPTYCH PANEL 02 ▼ -->
+      <div class="diptych-card">
+        <div class="frame">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Diptych Image 02</span>
+            <span class="ph-hint">Portrait 4:5 ratio</span>
+          </div>
+        </div>
+        <h3>The Sonoran Desert</h3>
+        <span class="deck">— The second life. The choice.</span>
+        <p>Nine thousand kilometers from everything he had built. The American desert. The woman he loves. The proof that sovereignty is not what you can acquire — it is what you are willing to release when something sacred asks for it.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 8 — THE ARCHIVE (MASONRY)
+     Dense library — many images, varying sizes, click-to-expand.
+     Use this for the broader archive of life, work, and travel.
+     ============================================================ -->
+
+<section class="archive-section">
+  <div class="wrap-wide">
+    <div class="section-head">
+      <span class="label">The Full Archive</span>
+      <h2>The Wider <em>Library.</em></h2>
+      <p>The broader visual archive — life, work, travel, family. Hover for context. Click to enlarge.</p>
+    </div>
+
+    <div class="archive-grid">
+
+      <!-- ▼ ARCHIVE TEMPLATE — duplicate as needed.
+           Vary aspect ratios with .ar-1 through .ar-5 for visual rhythm.
+           ▼ -->
+
+      <div class="archive-item">
+        <div class="frame ar-1">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 01</span>
+            <span class="ph-hint">3:4 portrait</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— Crans-Montana · 1994</span>
+          The Omega European Masters week.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-2">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 02</span>
+            <span class="ph-hint">1:1 square</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— Geneva · IHEID</span>
+          Executive Master in International Negotiations.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-4">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 03</span>
+            <span class="ph-hint">4:3 landscape</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— Lake Léman · 2010</span>
+          Water-skiing on the lake.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-3">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 04</span>
+            <span class="ph-hint">4:5 portrait</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— IMD Lausanne</span>
+          High Performance Leadership program.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-2">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 05</span>
+            <span class="ph-hint">1:1 square</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— Bottmingen · Schloss</span>
+          Returning to the village of formation.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-1">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 06</span>
+            <span class="ph-hint">3:4 portrait</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— Scottsdale · 2026</span>
+          Daily training discipline.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-5">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 07</span>
+            <span class="ph-hint">2:3 portrait</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— INSEAD Fontainebleau</span>
+          Managing Others. Managing Oneself.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-4">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 08</span>
+            <span class="ph-hint">4:3 landscape</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— With Gemma</span>
+          The marriage that redirected the entire life.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-2">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 09</span>
+            <span class="ph-hint">1:1 square</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— Author Portrait</span>
+          From Victim to Victory.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-3">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 10</span>
+            <span class="ph-hint">4:5 portrait</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— Mountain Biking</span>
+          The life medicine said was impossible.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-1">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 11</span>
+            <span class="ph-hint">3:4 portrait</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— Swiss Federal Chamber</span>
+          Political delegate · federal & cantonal level.
+        </div>
+      </div>
+
+      <div class="archive-item">
+        <div class="frame ar-2">
+          <div class="img-placeholder">
+            <span class="ph-icon">◇</span>
+            <span class="ph-text">Archive 12</span>
+            <span class="ph-hint">1:1 square</span>
+          </div>
+        </div>
+        <div class="caption">
+          <span class="source">— With the Animals</span>
+          The household of twenty-seven souls.
+        </div>
+      </div>
+
+      <!--
+        ▲▲▲ END ARCHIVE TEMPLATE ▲▲▲
+        Add as many archive items as you'd like — masonry handles them automatically.
+      -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     QUOTE INTERLUDE 02
+     ============================================================ -->
+
+<section class="quote-interlude">
+  <blockquote>
+    What he teaches isn't philosophy. <em style="color: var(--gold-bright); font-style: italic;">It's autobiography</em> — reverse-engineered into a complete operating system.
+  </blockquote>
+  <div class="attrib">— On Sascha Gorokhoff</div>
+</section>
+
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+
+<section class="final" id="book">
+  <span class="label">Approximately 1 in 5 Billion</span>
+  <h2>The Man <em>Behind the Image.</em></h2>
+  <p>Photographs are evidence. The real work happens in conversations. If something in this archive resonated with where you are right now — the door is open.</p>
+  <div class="cta-row">
+    <a href="https://www.saschagorokhoff.com/contact" class="btn-primary">Submit Application</a>
+    <a href="https://www.saschagorokhoff.com/" class="btn-ghost">Return to Sascha.com</a>
+  </div>
+</section>
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="brand">Sascha <span>Gorokhoff</span></div>
+  <div class="tag">Swiss-American · Worldwide · 1 in 5 Billion</div>
+  <div class="copy">© 2026 Sascha Gorokhoff · All Rights Reserved · Serving Worldwide</div>
+</footer>
+
+</div>
+
+<!-- ===================== LIGHTBOX OVERLAY ===================== -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close">Close · Esc</button>
+  <img id="lb-image" src="" alt="" />
+</div>
+
+<!-- ===================== JAVASCRIPT ===================== -->
+<script>
+  // Reveal on scroll
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.06 });
+  document.querySelectorAll('.section-head, .frame, .editorial-text, .location-card, .stage-card, .portrait-card, .diptych-card, .archive-item, .immersive-caption').forEach(el => {
+    el.classList.add('reveal');
+    obs.observe(el);
+  });
+
+  // Click-to-enlarge lightbox (works on any <img> inside a .frame)
+  const lightbox = document.getElementById('lightbox');
+  const lbImage = document.getElementById('lb-image');
+  const lbClose = document.getElementById('lb-close');
+
+  document.querySelectorAll('.frame img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+      lbImage.src = img.src;
+      lbImage.alt = img.alt || '';
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  lbClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+</body>
+</html>

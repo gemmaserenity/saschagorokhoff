@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sascha Gorokhoff — Keynote Speaking | The Story That Elevates Every Room | From $150,000</title>
+<meta name="description" content="Sascha Gorokhoff's keynote — the story that permanently transforms your audience. Delivered virtually worldwide as the default standard, with rare on-location engagements for the right stages. EN · FR · DE · From $150,000." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter+Tight:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy-deepest: #050B1E;
+    --navy-deep: #0A1530;
+    --navy: #0F1E42;
+    --navy-mid: #1A2B5C;
+    --navy-light: #2A3D75;
+    --gold: #C9A84C;
+    --gold-bright: #E8CC80;
+    --gold-pale: #F4E5B8;
+    --gold-deep: #8E7530;
+    --cream: #F5EFE0;
+    --cream-soft: #EDE5D0;
+    --line: rgba(201, 168, 76, 0.22);
+    --line-strong: rgba(201, 168, 76, 0.45);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter Tight', sans-serif;
+    background: var(--navy-deepest);
+    color: var(--cream);
+    line-height: 1.55;
+    overflow-x: hidden;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before {
+    content: ''; position: fixed; inset: 0; pointer-events: none;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(201, 168, 76, 0.06), transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(201, 168, 76, 0.04), transparent 50%);
+    z-index: 1;
+  }
+  body::after {
+    content: ''; position: fixed; inset: 0; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.5; z-index: 1; mix-blend-mode: overlay;
+  }
+  .container { position: relative; z-index: 2; }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  h1 em, h2 em, h3 em { font-style: italic; color: var(--gold-bright); font-weight: 400; }
+
+  .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* NAV */
+  nav.topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1.2rem 3rem;
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(5, 11, 30, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav.topbar .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; color: var(--cream);
+    text-decoration: none; letter-spacing: 0.04em;
+  }
+  nav.topbar .brand span { color: var(--gold); }
+  nav.topbar .nav-links { display: flex; gap: 2.4rem; align-items: center; }
+  nav.topbar .nav-links a {
+    color: var(--cream-soft); text-decoration: none;
+    font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace; transition: color 0.3s;
+  }
+  nav.topbar .nav-links a:hover { color: var(--gold-bright); }
+  nav.topbar .nav-cta {
+    padding: 0.7rem 1.4rem; border: 1px solid var(--gold);
+    color: var(--gold-bright) !important; transition: all 0.3s;
+  }
+  nav.topbar .nav-cta:hover { background: var(--gold); color: var(--navy-deepest) !important; }
+  @media (max-width: 900px) {
+    nav.topbar { padding: 1rem 1.2rem; }
+    nav.topbar .nav-links a:not(.nav-cta) { display: none; }
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    padding: 11rem 3rem 6rem;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative;
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(201, 168, 76, 0.10), transparent 60%),
+      linear-gradient(180deg, var(--navy-deepest) 0%, var(--navy-deep) 100%);
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw; max-width: 1200px;
+    aspect-ratio: 1;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+  .hero::after {
+    content: ''; position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw; max-width: 800px;
+    aspect-ratio: 1;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+  .hero-inner { max-width: 1280px; margin: 0 auto; width: 100%; position: relative; z-index: 3; }
+  .hero-tag {
+    display: flex; align-items: center; gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .hero-tag .line { width: 50px; height: 1px; background: var(--gold); }
+  .hero h1 {
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 300; color: var(--cream);
+    margin-bottom: 2rem; max-width: 18ch;
+  }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 300; font-style: italic;
+    color: var(--cream-soft);
+    max-width: 60ch; line-height: 1.45;
+    margin-bottom: 3rem;
+  }
+  .hero-meta {
+    display: flex; flex-wrap: wrap; gap: 2.5rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .hero-meta div .label { display: block; margin-bottom: 0.4rem; }
+  .hero-meta div strong {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500; font-size: 1.3rem;
+    color: var(--gold-bright);
+  }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+  .btn-primary {
+    padding: 1.1rem 2.4rem;
+    background: var(--gold); color: var(--navy-deepest);
+    text-decoration: none; font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
+    font-weight: 500; transition: all 0.3s;
+    border: 1px solid var(--gold);
+  }
+  .btn-primary:hover { background: var(--gold-bright); border-color: var(--gold-bright); transform: translateY(-2px); }
+  .btn-ghost {
+    padding: 1.1rem 2.4rem; background: transparent;
+    color: var(--gold-bright); text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
+    border: 1px solid var(--line-strong); transition: all 0.3s;
+  }
+  .btn-ghost:hover { border-color: var(--gold); background: rgba(201, 168, 76, 0.06); }
+
+  section { padding: 8rem 3rem; position: relative; }
+  .wrap { max-width: 1280px; margin: 0 auto; }
+  .section-head {
+    text-align: center; margin-bottom: 5rem;
+    max-width: 900px; margin-left: auto; margin-right: auto;
+  }
+  .section-head .label { display: inline-block; margin-bottom: 1.5rem; }
+  .section-head h2 {
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    margin-bottom: 1.5rem; color: var(--cream);
+  }
+  .section-head p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-style: italic;
+    color: var(--cream-soft); line-height: 1.55;
+  }
+
+  /* PROMISE */
+  .promise {
+    background: var(--navy-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .promise-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+  }
+  .promise-grid .left .label { margin-bottom: 1.5rem; display: inline-block; }
+  .promise-grid h2 {
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    color: var(--cream); margin-bottom: 2rem;
+  }
+  .promise-grid .right p {
+    font-size: 1.15rem; color: var(--cream-soft);
+    margin-bottom: 1.4rem; line-height: 1.65;
+  }
+  .promise-grid .right p:first-child::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5rem; color: var(--gold);
+    float: left; line-height: 0.85;
+    padding: 0.4rem 0.8rem 0 0; font-weight: 400;
+  }
+  @media (max-width: 900px) {
+    .promise-grid { grid-template-columns: 1fr; gap: 3rem; }
+  }
+
+  /* THE EFFECT */
+  .effect-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid var(--line);
+  }
+  .effect-cell {
+    padding: 3rem 2.4rem;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: rgba(15, 30, 66, 0.4);
+    transition: background 0.4s;
+  }
+  .effect-cell:hover { background: rgba(26, 43, 92, 0.6); }
+  .effect-cell:nth-child(3n) { border-right: none; }
+  .effect-cell:nth-last-child(-n+3) { border-bottom: none; }
+  .effect-cell .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--gold);
+    margin-bottom: 1.6rem; display: block;
+  }
+  .effect-cell h3 {
+    font-size: 1.7rem; color: var(--cream);
+    margin-bottom: 1rem; line-height: 1.15;
+  }
+  .effect-cell p { color: var(--cream-soft); font-size: 0.96rem; line-height: 1.65; }
+  @media (max-width: 900px) {
+    .effect-grid { grid-template-columns: 1fr; }
+    .effect-cell { border-right: none !important; border-bottom: 1px solid var(--line) !important; }
+    .effect-cell:last-child { border-bottom: none !important; }
+  }
+
+  /* THE STORY */
+  .story {
+    background:
+      radial-gradient(ellipse at 30% 20%, rgba(201, 168, 76, 0.08), transparent 55%),
+      var(--navy-deepest);
+    padding: 9rem 3rem;
+  }
+  .story-frame {
+    max-width: 980px; margin: 0 auto;
+    border: 1px solid var(--line);
+    padding: 5rem clamp(2rem, 5vw, 5rem);
+    position: relative;
+    background: rgba(10, 21, 48, 0.5);
+  }
+  .story-frame::before, .story-frame::after {
+    content: ''; position: absolute;
+    width: 30px; height: 30px;
+    border: 1px solid var(--gold);
+  }
+  .story-frame::before { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+  .story-frame::after { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+  .story-frame .label { display: block; text-align: center; margin-bottom: 2rem; }
+  .story-frame h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    color: var(--cream); margin-bottom: 3rem;
+  }
+  .story-frame p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; line-height: 1.7;
+    color: var(--cream); margin-bottom: 1.6rem;
+    font-weight: 300;
+  }
+  .story-frame p.lead {
+    font-size: 1.55rem; font-style: italic;
+    text-align: center; color: var(--gold-pale);
+    margin-bottom: 2.5rem; line-height: 1.55;
+  }
+  .story-frame .closer {
+    text-align: center; padding-top: 2.5rem; margin-top: 2.5rem;
+    border-top: 1px solid var(--line);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.4rem; color: var(--gold-bright);
+  }
+
+  /* FORMAT — online primary */
+  .format {
+    background: var(--navy-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .format-split {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 0;
+    border: 1px solid var(--line);
+    background: rgba(10, 21, 48, 0.5);
+  }
+  .format-cell {
+    padding: 4rem;
+    border-right: 1px solid var(--line);
+  }
+  .format-cell:last-child { border-right: none; background: rgba(15, 30, 66, 0.4); }
+  .format-cell .badge {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    background: var(--gold);
+    color: var(--navy-deepest);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  .format-cell.secondary .badge {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+  }
+  .format-cell h3 {
+    font-size: 2rem; color: var(--cream);
+    margin-bottom: 0.6rem; line-height: 1.15;
+  }
+  .format-cell .tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; color: var(--gold-bright);
+    font-size: 1.15rem; margin-bottom: 1.4rem; display: block;
+  }
+  .format-cell p { color: var(--cream-soft); line-height: 1.65; margin-bottom: 1.4rem; font-size: 1rem; }
+  .format-cell .meta-row {
+    display: flex; justify-content: space-between;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.95rem;
+  }
+  .format-cell .meta-row:last-child { border-bottom: none; }
+  .format-cell .meta-row .k {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--cream-soft); opacity: 0.7;
+  }
+  .format-cell .meta-row .v {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--gold-bright); font-style: italic; font-weight: 500;
+    text-align: right;
+  }
+  @media (max-width: 900px) {
+    .format-split { grid-template-columns: 1fr; }
+    .format-cell { border-right: none; border-bottom: 1px solid var(--line); padding: 2.5rem; }
+    .format-cell:last-child { border-bottom: none; }
+  }
+
+  /* SIGNATURE TALKS */
+  .talks-list { display: grid; gap: 1.5rem; }
+  .talk {
+    border: 1px solid var(--line);
+    background: rgba(10, 21, 48, 0.4);
+    padding: 2.5rem 3rem;
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 2rem;
+    align-items: start;
+    transition: all 0.4s;
+  }
+  .talk:hover {
+    border-color: var(--line-strong);
+    background: rgba(15, 30, 66, 0.6);
+    transform: translateX(6px);
+  }
+  .talk-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 2.6rem;
+    color: var(--gold); line-height: 1;
+  }
+  .talk-body h3 { font-size: 1.7rem; color: var(--cream); margin-bottom: 0.8rem; }
+  .talk-body p { color: var(--cream-soft); font-size: 1rem; line-height: 1.6; }
+  .talk-meta {
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--gold);
+  }
+  .talk-meta div { margin-bottom: 0.4rem; }
+  @media (max-width: 900px) {
+    .talk { grid-template-columns: 1fr; gap: 1rem; padding: 2rem; }
+    .talk-meta { text-align: left; }
+  }
+
+  /* AUDIENCES */
+  .audiences {
+    background: var(--navy-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .aud-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border: 1px solid var(--line);
+  }
+  .aud-cell {
+    padding: 3rem;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .aud-cell:nth-child(2n) { border-right: none; }
+  .aud-cell:nth-last-child(-n+2) { border-bottom: none; }
+  .aud-cell h3 {
+    font-size: 1.45rem; color: var(--gold-bright);
+    margin-bottom: 1rem; font-style: italic;
+  }
+  .aud-cell p { color: var(--cream-soft); line-height: 1.65; }
+  @media (max-width: 700px) {
+    .aud-grid { grid-template-columns: 1fr; }
+    .aud-cell { border-right: none !important; }
+    .aud-cell:last-child { border-bottom: none !important; }
+  }
+
+  /* LANGUAGES */
+  .lang-strip {
+    background: var(--navy-deepest);
+    text-align: center;
+    padding: 5rem 3rem;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .lang-strip h3 {
+    font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+    color: var(--cream);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+  .lang-flags {
+    display: flex; justify-content: center;
+    flex-wrap: wrap; gap: 3rem;
+  }
+  .lang-flag { text-align: center; }
+  .lang-flag .flag { font-size: 2.2rem; margin-bottom: 0.5rem; display: block; }
+  .lang-flag .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; color: var(--gold-bright); font-size: 1.1rem;
+  }
+  .lang-flag .level {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--cream-soft);
+    margin-top: 0.3rem; opacity: 0.7;
+  }
+
+  /* ROI ARITHMETIC */
+  .arithmetic {
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.06), transparent 70%),
+      var(--navy-deep);
+  }
+  .arith-table {
+    max-width: 1080px; margin: 0 auto;
+    border: 1px solid var(--line);
+    background: rgba(10, 21, 48, 0.5);
+  }
+  .arith-row {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 220px;
+    border-bottom: 1px solid var(--line);
+  }
+  .arith-row:last-child { border-bottom: none; }
+  .arith-row.head { background: rgba(201, 168, 76, 0.05); }
+  .arith-row.head > div {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--gold);
+    padding: 1.5rem 2rem;
+  }
+  .arith-row > div { padding: 2rem; border-right: 1px solid var(--line); }
+  .arith-row > div:last-child { border-right: none; }
+  .arith-row .what {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; color: var(--cream); font-style: italic;
+  }
+  .arith-row .desc { color: var(--cream-soft); font-size: 0.95rem; line-height: 1.6; }
+  .arith-row .val {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; color: var(--gold-bright);
+    text-align: right; font-weight: 500;
+  }
+  .arith-row.total { background: rgba(201, 168, 76, 0.08); }
+  .arith-row.total .what { color: var(--gold-bright); font-size: 1.5rem; }
+  .arith-row.total .val { color: var(--gold-pale); font-size: 1.7rem; }
+  @media (max-width: 900px) {
+    .arith-row { grid-template-columns: 1fr; }
+    .arith-row > div { border-right: none; border-bottom: 1px solid var(--line); padding: 1.4rem; }
+    .arith-row > div:last-child { border-bottom: none; }
+    .arith-row .val { text-align: left; }
+  }
+  .arith-frame-note {
+    text-align: center; margin-top: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.25rem;
+    color: var(--gold-pale); max-width: 720px;
+    margin-left: auto; margin-right: auto; line-height: 1.55;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials { background: var(--navy-deepest); }
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .testi {
+    border: 1px solid var(--line);
+    padding: 3rem;
+    background: rgba(10, 21, 48, 0.5);
+    position: relative;
+  }
+  .testi::before {
+    content: '\201C';
+    position: absolute; top: -10px; left: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 6rem; color: var(--gold);
+    line-height: 1; opacity: 0.6;
+  }
+  .testi p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.3rem;
+    line-height: 1.55; color: var(--cream);
+    margin-bottom: 1.5rem;
+  }
+  .testi .who {
+    border-top: 1px solid var(--line);
+    padding-top: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold);
+  }
+  .testi .who span { display: block; color: var(--cream-soft); margin-top: 0.3rem; opacity: 0.7; }
+  @media (max-width: 900px) { .testi-grid { grid-template-columns: 1fr; } }
+
+  /* PROCESS */
+  .process {
+    background: var(--navy-deep);
+    border-top: 1px solid var(--line);
+  }
+  .process-steps {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+    counter-reset: step;
+  }
+  .pstep {
+    border-top: 1px solid var(--line-strong);
+    padding-top: 2rem;
+    counter-increment: step;
+  }
+  .pstep::before {
+    content: counter(step, decimal-leading-zero);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 3rem;
+    color: var(--gold); line-height: 1;
+    margin-bottom: 1.4rem; display: block;
+  }
+  .pstep h3 { font-size: 1.4rem; color: var(--cream); margin-bottom: 0.8rem; }
+  .pstep p { color: var(--cream-soft); font-size: 0.95rem; line-height: 1.6; }
+  @media (max-width: 900px) { .process-steps { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .process-steps { grid-template-columns: 1fr; } }
+
+  /* FINAL */
+  .final {
+    padding: 10rem 3rem;
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(201, 168, 76, 0.12), transparent 65%),
+      var(--navy-deepest);
+    text-align: center;
+    border-top: 1px solid var(--line);
+  }
+  .final .label { display: inline-block; margin-bottom: 1.8rem; }
+  .final h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    color: var(--cream); margin-bottom: 2rem;
+    max-width: 18ch; margin-left: auto; margin-right: auto;
+  }
+  .final p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.4rem;
+    color: var(--gold-pale); max-width: 60ch;
+    margin: 0 auto 3rem; line-height: 1.55;
+  }
+
+  footer {
+    padding: 4rem 3rem 2.5rem;
+    background: var(--navy-deepest);
+    border-top: 1px solid var(--line);
+    text-align: center;
+  }
+  footer .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; color: var(--cream);
+    margin-bottom: 0.8rem; letter-spacing: 0.04em;
+  }
+  footer .brand span { color: var(--gold); }
+  footer .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 2rem;
+  }
+  footer .copy { color: var(--cream-soft); font-size: 0.85rem; opacity: 0.6; }
+
+  .reveal {
+    opacity: 0; transform: translateY(30px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<nav class="topbar">
+  <a href="https://www.saschagorokhoff.com/" class="brand">Sascha <span>Gorokhoff</span></a>
+  <div class="nav-links">
+    <a href="#story">The Story</a>
+    <a href="#talks">Signature Talks</a>
+    <a href="#format">Format</a>
+    <a href="#book" class="nav-cta">Request Booking</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">
+      <span class="line"></span>
+      <span class="label">Keynote · Worldwide · Online-First · EN · FR · DE</span>
+    </div>
+    <h1>The Speaker Who Doesn't Address the Room — He <em>Elevates It.</em></h1>
+    <p class="hero-sub">When Sascha Gorokhoff appears on your screen, the atmosphere shifts before he speaks his first word. By the time he leaves, every person in the audience has been recalibrated to a higher altitude of thought, of belief, of possibility. This is what audiences mean when they say a keynote was "the moment everything changed."</p>
+
+    <div class="hero-meta">
+      <div>
+        <span class="label">Investment</span>
+        <strong>From $150,000</strong>
+      </div>
+      <div>
+        <span class="label">Languages</span>
+        <strong>EN · FR · DE</strong>
+      </div>
+      <div>
+        <span class="label">Format</span>
+        <strong>Virtual · Worldwide</strong>
+      </div>
+      <div>
+        <span class="label">Rarity</span>
+        <strong>1 in 5 Billion</strong>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <a href="#book" class="btn-primary">Request Booking</a>
+      <a href="#story" class="btn-ghost">The Story Behind the Stage</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section class="promise">
+  <div class="wrap">
+    <div class="promise-grid">
+      <div class="left">
+        <span class="label">The Keynote Promise</span>
+        <h2>Your audience walks out <em>different.</em> Not impressed. <em>Different.</em></h2>
+      </div>
+      <div class="right">
+        <p>Most keynote speakers entertain. A few inform. A vanishingly small number actually transform. Sascha Gorokhoff is in the third category — and operating at a register the others cannot reach.</p>
+        <p>His keynote does not deliver content. It delivers <em>evidence</em>. Evidence that medical predictions can be defied. Evidence that institutional gatekeepers can be walked past. Evidence that the ceiling every one of your audience members has been told is real — is not. And that evidence does not arrive as theory. It arrives as a Swiss-American man, formed in three of Europe's most rarefied environments, holding the rarest combination of credentials in his field, who lived every word of what he is now teaching them.</p>
+        <p>By the time he finishes, your audience is not motivated. They are <em>recalibrated</em>. And recalibration is permanent — whether the room exists in a single physical building or across the screens of two thousand people on five continents.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE EFFECT -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">What Happens When Sascha Speaks</span>
+      <h2>The Six Things That Happen When Sascha <em>Takes the Stage</em></h2>
+      <p>Documented across decades of keynotes, executive addresses, and global virtual summits — in four languages, on screens and stages worldwide.</p>
+    </div>
+
+    <div class="effect-grid">
+      <div class="effect-cell">
+        <span class="num">i.</span>
+        <h3>The Atmosphere Lifts</h3>
+        <p>Within ninety seconds of Sascha appearing on the broadcast, the audience's center of gravity has shifted. Cameras come on. Phones go away. Even the most jaded attendees stop checking their inboxes. It is not a technique. It is a presence formed in rooms with Ambassadors, UN officials, and European generational wealth since adolescence.</p>
+      </div>
+      <div class="effect-cell">
+        <span class="num">ii.</span>
+        <h3>The Skeptic Surrenders</h3>
+        <p>Every audience contains the executive who has heard a hundred speakers and believed none of them. Sascha does not argue with that person. He becomes the data point that argument cannot dismiss. By minute fifteen, that executive is leaning into the screen.</p>
+      </div>
+      <div class="effect-cell">
+        <span class="num">iii.</span>
+        <h3>The Ceiling Disappears</h3>
+        <p>Audiences arrive carrying invisible ceilings — assumptions about what they can and cannot do. Sascha does not lecture about ceilings. He stands on screen as a man who walked through one medical, three academic, two cultural, and one geographic ceiling. The audience watches their own ceiling dissolve in real time.</p>
+      </div>
+      <div class="effect-cell">
+        <span class="num">iv.</span>
+        <h3>The Room Becomes a Mirror</h3>
+        <p>The most powerful moment in any Sascha keynote is the moment a CEO, a founder, or a sovereign individual realizes the story is not about him — it is about <em>them</em>. About the version of themselves they have been postponing. About the room they have not yet allowed themselves to walk into.</p>
+      </div>
+      <div class="effect-cell">
+        <span class="num">v.</span>
+        <h3>The Frameworks Land</h3>
+        <p>Inspiration without architecture is theater. Sascha delivers BROKE → MILLIONAIRE → BILLIONAIRE → SEPARATION as a complete operating system the audience leaves the broadcast owning. They do not take notes to remember. They take notes to <em>execute Monday morning</em>.</p>
+      </div>
+      <div class="effect-cell">
+        <span class="num">vi.</span>
+        <h3>The Standing Ovation Is Quiet First</h3>
+        <p>The mark of a transformative keynote is not the applause. It is the ten seconds of silence — the chat thread that goes still — when the audience is still processing what just happened to them. Sascha consistently produces those ten seconds. Then the chat erupts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="story-frame">
+    <span class="label">The Story That Elevates Every Room It Enters</span>
+    <h2>Born With a <em>Death Sentence.</em><br />Built a Life That Defied Every <em>Statistic</em> That Tried to End Him.</h2>
+
+    <p class="lead">"There is a fine line between victim and victory — that's just a couple of letters — and you choose."</p>
+
+    <p>Sascha Gorokhoff was born severely disabled with Spina Bifida Myelomeningocele, Hydrocephalus, and Arnold-Chiari II. Every page of medical literature said the same thing: he would be paralyzed before age one. He would never learn at a higher level. He would die before age seven. He would not amount to anything.</p>
+
+    <p>By the time he was a teenager, he was skiing the Swiss Alps. Water-skiing on Lac Léman. Skateboarding through the streets of Geneva. Mountain-biking through the foothills of Crans-Montana. He had become a living refusal of every prediction medicine had filed against him.</p>
+
+    <p>Then he completed two bachelor's degrees with honors and a marketing certificate — simultaneously — in two and a half years. Earned an Executive Master from IHEID Geneva, the institute founded alongside the League of Nations. Was certified by IMD Lausanne — Financial Times #1 ranked in open executive education for eight consecutive years — and by INSEAD Fontainebleau. Read 500+ books. Became fluent in four languages. Served as a political delegate at federal and cantonal level in Switzerland. Sat on the board of the largest business club in Geneva. All before his early thirties.</p>
+
+    <p>And then, at the age in which most men are securing their pinnacle, Sascha did the most extraordinary thing of all: he <em>walked away from it</em>. Sold his Geneva apartment in Champel. Sold his BMW. Declined an accepted Executive MPA at the University of Bern. Relocated nine thousand kilometers to the American desert — to save the woman he loved.</p>
+
+    <p>This is the man who appears on your audience's screens. Not a coach who has read about extraordinary lives. <em>An extraordinary life</em> — placed at the service of your audience for ninety minutes that will become the reference point against which they measure every other keynote, for the rest of their careers.</p>
+
+    <div class="closer">When Sascha tells his story, he is not performing. He is offering your audience the proof that what they have been told is impossible — never was.</div>
+  </div>
+</section>
+
+<!-- LANGUAGE STRIP -->
+<section class="lang-strip">
+  <h3>Delivered Natively in <em style="font-style:italic; color: var(--gold-bright);">Four Languages</em></h3>
+  <div class="lang-flags">
+    <div class="lang-flag">
+      <span class="flag">🇺🇸</span>
+      <span class="name">English</span>
+      <span class="level">Native</span>
+    </div>
+    <div class="lang-flag">
+      <span class="flag">🇫🇷</span>
+      <span class="name">Français</span>
+      <span class="level">Native</span>
+    </div>
+    <div class="lang-flag">
+      <span class="flag">🇩🇪</span>
+      <span class="name">Deutsch</span>
+      <span class="level">Native</span>
+    </div>
+    <div class="lang-flag">
+      <span class="flag">🇨🇭</span>
+      <span class="name">Schwiizerdütsch</span>
+      <span class="level">Native</span>
+    </div>
+    <div class="lang-flag">
+      <span class="flag">🇮🇹</span>
+      <span class="name">Italiano</span>
+      <span class="level">Working</span>
+    </div>
+  </div>
+  <p style="margin-top: 2.5rem; font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--cream-soft); max-width: 60ch; margin-left: auto; margin-right: auto; font-size: 1.15rem; line-height: 1.55;">Most international speakers require a translator and lose half the audience. Sascha addresses your audience in their own native register, with their own cultural codes, without an interpreter standing between him and their nervous systems — anywhere on earth, on any platform, on the same day.</p>
+</section>
+
+<!-- FORMAT -->
+<section class="format" id="format">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Format & Delivery</span>
+      <h2>The Online-First Keynote — A <em>Feature, Not a Compromise</em></h2>
+      <p>Sascha's keynotes are delivered virtually as the default standard. The advantages are structural: no travel friction, no jet-lag delivery, fully native multilingual reach across continents on the same day, and broadcast-grade execution every time.</p>
+    </div>
+
+    <div class="format-split">
+      <div class="format-cell">
+        <div class="badge">Primary Standard</div>
+        <h3>Virtual Keynote — Worldwide</h3>
+        <span class="tagline">Broadcast-grade delivery to your audience, anywhere, in their native language, with zero logistical overhead.</span>
+        <p>The default Sascha keynote: a fully produced virtual delivery to your audience — Zoom, Teams, Webex, Hopin, your custom platform, or directly into your hybrid event. Sascha appears live from a broadcast-grade home studio (multi-camera, professional lighting, lavalier-grade audio, redundant connectivity). Identical impact to in-person — without the carbon, the calendar friction, or the cost of flying him in.</p>
+        <div class="meta-row"><span class="k">Duration</span><span class="v">60 – 90 Minutes</span></div>
+        <div class="meta-row"><span class="k">Platform</span><span class="v">Yours of Choice</span></div>
+        <div class="meta-row"><span class="k">Languages</span><span class="v">EN · FR · DE</span></div>
+        <div class="meta-row"><span class="k">Audience Size</span><span class="v">No Cap</span></div>
+        <div class="meta-row"><span class="k">Recording Rights</span><span class="v">Included</span></div>
+      </div>
+
+      <div class="format-cell secondary">
+        <div class="badge">Rare · By Exception</div>
+        <h3>On-Location</h3>
+        <span class="tagline">Reserved for the right stage, at the right altitude, at the right moment.</span>
+        <p>Sascha travels rarely — and only for engagements where on-location presence is the right architectural choice. When he does travel, all expenses are covered by the engaging organization at first-class or private aviation standard, with five-star accommodation. Limited slots per year. Book early.</p>
+        <div class="meta-row"><span class="k">Availability</span><span class="v">Very Limited</span></div>
+        <div class="meta-row"><span class="k">Premium</span><span class="v">+ All Expenses</span></div>
+        <div class="meta-row"><span class="k">Notice</span><span class="v">90 Days Min.</span></div>
+        <div class="meta-row"><span class="k">Standard</span><span class="v">First-Class · 5-Star</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNATURE TALKS -->
+<section id="talks">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">The Signature Keynotes</span>
+      <h2>Five Talks. Each One <em>Permanent.</em></h2>
+      <p>Every signature keynote is custom-tailored to your audience and your moment. These are the foundational architectures around which Sascha builds.</p>
+    </div>
+
+    <div class="talks-list">
+
+      <div class="talk">
+        <div class="talk-num">i</div>
+        <div class="talk-body">
+          <h3>From Victim to Victory: The Code That Rewrites Your Ceiling</h3>
+          <p>The flagship keynote. Sascha's complete personal architecture — born disabled, declared terminal, predicted to never amount to anything — reverse-engineered into a transferable framework your audience can apply Monday morning. The talk that has produced more standing ovations than any other in his repertoire.</p>
+        </div>
+        <div class="talk-meta">
+          <div>60–90 min</div>
+          <div>Universal</div>
+          <div>EN · FR · DE</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-num">ii</div>
+        <div class="talk-body">
+          <h3>Broke to Billionaire: The Separation Code</h3>
+          <p>For founder, executive, and high-achiever audiences. The complete BROKE → MILLIONAIRE → BILLIONAIRE → SEPARATION framework — what separates the people who plateau from the people who keep ascending. Built from thirty years of working with the world's highest achievers.</p>
+        </div>
+        <div class="talk-meta">
+          <div>75–90 min</div>
+          <div>Founders · Executives</div>
+          <div>EN · FR · DE</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-num">iii</div>
+        <div class="talk-body">
+          <h3>The Sovereignty of Walking Away</h3>
+          <p>The keynote about what the most extraordinary leaders are willing to give up. Drawing on the pivotal moment Sascha walked away from his Swiss political career, his Geneva board seat, his Bern admission, and his Swiss citizenship — for love. A masterclass in the kind of character that cannot be acquired, only revealed.</p>
+        </div>
+        <div class="talk-meta">
+          <div>60–75 min</div>
+          <div>Senior Leadership</div>
+          <div>EN · FR · DE</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-num">iv</div>
+        <div class="talk-body">
+          <h3>The 1-in-5-Billion Mind: How to Build a Profile That Cannot Be Replicated</h3>
+          <p>For elite professional audiences. The architecture of irreplicable positioning — drawn from Sascha's own compound rarity (Bottmingen, Champel, Crans-Montana, IHEID, IMD, INSEAD, four languages, six cultures, 500+ books). The keynote that teaches your audience to engineer rarity rather than chase comparison.</p>
+        </div>
+        <div class="talk-meta">
+          <div>60–90 min</div>
+          <div>Professional Services</div>
+          <div>EN · FR · DE</div>
+        </div>
+      </div>
+
+      <div class="talk">
+        <div class="talk-num">v</div>
+        <div class="talk-body">
+          <h3>Custom Architecture</h3>
+          <p>For events with a specific theme, audience, or strategic moment. Sascha will architect a keynote built specifically for your audience — drawing on his entire body of work and decades of stage experience — to land the exact transformation your event needs to deliver. Six-week development arc. Three rehearsal touchpoints. Full conformance to your event's narrative spine.</p>
+        </div>
+        <div class="talk-meta">
+          <div>By design</div>
+          <div>Bespoke</div>
+          <div>Any language</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AUDIENCES -->
+<section class="audiences">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Who Books Sascha</span>
+      <h2>The Stages Where Sascha <em>Belongs</em></h2>
+      <p>Sascha Gorokhoff is not a speaker for every event. He is the speaker for the events where the bar is unreasonably high and the audience deserves nothing less.</p>
+    </div>
+
+    <div class="aud-grid">
+      <div class="aud-cell">
+        <h3>Fortune 500 & Global Enterprise Virtual Summits</h3>
+        <p>Annual leadership conferences. Executive offsites delivered virtually. Top-100 retreats. Sales kickoffs for global teams. Board summits. The events where your most senior people will be on the call — and where the keynote needs to actually deliver, not just decorate.</p>
+      </div>
+      <div class="aud-cell">
+        <h3>Founder & Executive Online Conferences</h3>
+        <p>YPO, EO, Vistage, TEC, Tiger 21, family-office summits, sovereign wealth gatherings, ninth-figure founder retreats. The rooms where the audience can buy any speaker on earth — and is asking who is actually worth the time.</p>
+      </div>
+      <div class="aud-cell">
+        <h3>Industry & Association Hybrid Events</h3>
+        <p>The flagship annual gala. The convention closing keynote. The black-tie dinner that ends the year — broadcast to a global online audience. The moment when the entire industry is watching and the keynote needs to be the conversation for the next twelve months.</p>
+      </div>
+      <div class="aud-cell">
+        <h3>Private Salons & Sovereign Online Gatherings</h3>
+        <p>Closed-door virtual dinners for ten to thirty principals. UHNW family gatherings. Private investor circles. Diplomatic salons. The gatherings where the public never hears about the speaker — but where the speaker permanently changes the strategic direction of the people in the room.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI ARITHMETIC -->
+<section class="arithmetic">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">The Honest Arithmetic</span>
+      <h2>What Your Audience Actually <em>Receives</em></h2>
+      <p>For most events, the keynote is the highest-leverage line item in the entire budget. Below is the honest valuation of what walks onto your screen when Sascha appears.</p>
+    </div>
+
+    <div class="arith-table">
+      <div class="arith-row head">
+        <div>What You Receive</div>
+        <div>What It Means For Your Audience</div>
+        <div style="text-align:right;">Equivalent Value</div>
+      </div>
+
+      <div class="arith-row">
+        <div class="what">A 1-in-5-Billion Profile</div>
+        <div class="desc">A keynote speaker whose statistical rarity is mathematically unprecedented. There is no other speaker on earth with this compound profile. Your audience knows immediately they are in the presence of someone irreplaceable — the screen does not diminish that one degree.</div>
+        <div class="val">Beyond Comparison</div>
+      </div>
+
+      <div class="arith-row">
+        <div class="what">Three Decades of Lived Architecture</div>
+        <div class="desc">Not a theorist. Not a researcher. A man who lived every word of the framework he is teaching — through medical impossibility, abuse, Swiss aristocratic formation, and global sacrifice for love.</div>
+        <div class="val">$5M+ R&D Equivalent</div>
+      </div>
+
+      <div class="arith-row">
+        <div class="what">The Most Prestigious Credentials in His Field</div>
+        <div class="desc">IHEID Geneva (founded with the League of Nations). IMD Lausanne (FT #1 worldwide). INSEAD Fontainebleau. Four languages, six cultures, 500+ books. A faculty-grade intellectual on your broadcast.</div>
+        <div class="val">Faculty-Tier Authority</div>
+      </div>
+
+      <div class="arith-row">
+        <div class="what">A Permanent Recalibration of Your Audience</div>
+        <div class="desc">Other speakers leave the audience entertained for a week. Sascha leaves them recalibrated for a decade. Conservatively, even a 1% performance lift across a Fortune-500 leadership audience represents tens of millions of dollars in compounded outcomes.</div>
+        <div class="val">$10M – $100M+</div>
+      </div>
+
+      <div class="arith-row">
+        <div class="what">Global Reach Without Travel Friction</div>
+        <div class="desc">A Sascha keynote can be delivered to your London team at 9am, your New York team at noon, and your Singapore team the next morning — same speaker, same level, same week. No jet-lag delivery. No carbon footprint. No logistical overhead.</div>
+        <div class="val">Strategic Multiplier</div>
+      </div>
+
+      <div class="arith-row total">
+        <div class="what">Sascha's Speaking Investment</div>
+        <div class="desc" style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.2rem; color: var(--cream);">The honest math: this fee is the smallest line in the comparison. That is precisely the point.</div>
+        <div class="val">From $150,000</div>
+      </div>
+    </div>
+
+    <div class="arith-frame-note">When the right speaker walks onto the right stage — physical or virtual — the ROI is not measured in the cost of the keynote. It is measured in the trajectory of the audience for the next ten years.</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">What They Said After</span>
+      <h2>The Words That Follow Sascha <em>Off the Screen</em></h2>
+    </div>
+
+    <div class="testi-grid">
+
+      <div class="testi">
+        <p>What Sascha has accomplished, no one else has ever done. Not even close. He has shifted my thinking, my confidence, my direction. He doesn't just push people toward success — he awakens them to their own power.</p>
+        <div class="who">Gemma G.<span>Entrepreneur & Leader</span></div>
+      </div>
+
+      <div class="testi">
+        <p>Sascha just gets it. He is incredibly knowledgeable in ways I couldn't see until after meeting with him. He sees things I couldn't see before.</p>
+        <div class="who">Ben C.<span>"Ben the Automator" — Business Leader</span></div>
+      </div>
+
+      <div class="testi">
+        <p>True human spirit rising above the impossible. His story is riveting. Bravo Sascha.</p>
+        <div class="who">Catie Wyman Norris<span>Naturopathic Doctor</span></div>
+      </div>
+
+      <div class="testi">
+        <p>An inspiring book that puts happiness into perspective. I truly admire Sascha's resolve to rise above hardship. A beautiful story and great guide for self-improvement.</p>
+        <div class="who">Kim Prezioso<span>Luxury Sales Professional</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">The Booking Architecture</span>
+      <h2>How Sascha <em>Comes In</em></h2>
+      <p>Every engagement is architected with precision. Below is the four-stage process from inquiry to standing ovation.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="pstep">
+        <h3>Booking Application</h3>
+        <p>Submit your inquiry through the form below. Sascha reviews every application personally. Response within 5 business days.</p>
+      </div>
+      <div class="pstep">
+        <h3>Strategic Alignment</h3>
+        <p>Once approved, a strategic alignment call is held with your event leadership. The audience, the moment, the narrative arc, and the desired transformation are mapped.</p>
+      </div>
+      <div class="pstep">
+        <h3>Custom Architecture</h3>
+        <p>Sascha architects the keynote specifically for your audience — drawing from his complete body of work. Three rehearsal checkpoints ensure perfect conformance to your event's spine.</p>
+      </div>
+      <div class="pstep">
+        <h3>Delivery & Extension</h3>
+        <p>Broadcast-grade delivery in your audience's native register. Recording rights included. Post-event extension materials. Optional 30-day audience activation campaign.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final" id="book">
+  <span class="label">Approximately 1 in 5 Billion</span>
+  <h2>The Most Statistically Rare Speaker On Earth Is <em>Available to Your Stage.</em></h2>
+  <p>Sascha takes a strictly limited number of keynote engagements per year. Every booking is reviewed personally. The right stage, the right audience, the right moment — and a permanent recalibration of every person watching.</p>
+  <div class="cta-row" style="justify-content: center;">
+    <a href="https://www.saschagorokhoff.com/contact" class="btn-primary">Submit Booking Application</a>
+    <a href="https://www.saschagorokhoff.com/" class="btn-ghost">Return to Sascha.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">Sascha <span>Gorokhoff</span></div>
+  <div class="tag">Swiss-American · Worldwide · 1 in 5 Billion</div>
+  <div class="copy">© 2026 Sascha Gorokhoff · All Rights Reserved · Serving Worldwide</div>
+</footer>
+
+</div>
+
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.section-head, .effect-cell, .talk, .aud-cell, .testi, .arith-row, .pstep, .format-cell').forEach(el => {
+    el.classList.add('reveal');
+    obs.observe(el);
+  });
+</script>
+
+</body>
+</html>
